@@ -84,9 +84,9 @@
 					<generalization xmi:type="uml:Generalization" xmi:id="EAID_13863E32_8106_4aa3_9D73_D12225B2849C" general="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Enumeration" xmi:id="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522" name="StandaardStatus">
-					<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_4177BC2D_9545_4dda_A00D_8ECCDC4EAA05" name="aanbevolen standaard"/>
-					<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_277B8F0B_D861_4cf8_AD5F_C1E20163D212" name="community standaard"/>
-					<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_35630464_B555_47aa_BD13_C1BE7B710134" name="Verplichte standaard"/>
+					<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_4177BC2D_9545_4dda_A00D_8ECCDC4EAA05" name="aanbevolenStandaard"/>
+					<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_277B8F0B_D861_4cf8_AD5F_C1E20163D212" name="communityStandaard"/>
+					<ownedLiteral xmi:type="uml:EnumerationLiteral" xmi:id="EAID_35630464_B555_47aa_BD13_C1BE7B710134" name="VerplichteStandaard"/>
 				</packagedElement>
 			</packagedElement>
 		</packagedElement>
@@ -215,13 +215,13 @@
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_4BF34B01_F30A_03f3_BCB6_A606B1C74DE6" name="Alternatieve naam" value="#NOTES#Description: De naam in natuurlijke of formele taal; afhankelijk van gekozen aanpak. Een alternatieve naam.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
+					<tag xmi:id="EAID_4BF34B01_F30A_03f3_BCB6_A606B1C74DE6" name="AlternatieveNaam" value="#NOTES#Description: De naam in natuurlijke of formele taal; afhankelijk van gekozen aanpak. Een alternatieve naam.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_5F3916B1_C5BA_aac5_A0A7_1E216D0C8B98" name="Definitie" value="Template voor een MIM-model#NOTES#Description: De beschrijving van de betekenis van de construct zoals gespecificeerd in de catalogus van de desbetreffende (basis)registratie of informatiemodel.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_C83112F8_84E1_3484_8C9E_D7499673CD26" name="Imvertor" value="model#NOTES#Values: model&#xA;Default: model&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_3ECE0828_D9F6_4b83_A33A_7F5172AD686C" name="Informatiemodeltype" value="Logisch" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
-					<tag xmi:id="EAID_3B9D7FED_1536_3715_9947_B4F71FC8FDE3" name="Is afgeleid" value="Zie package#NOTES#Values: Nee,Ja,Zie package&#xA;Default: Zie package&#xA;Description: Deze constructie is al dan niet afgeleid van een &quot;supplier model&quot;. Wanneer je niks opgeeft wordt afleiding vastgesteld op basis van het package waarin het voorkomt.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
-					<tag xmi:id="EAID_8566EBDA_6084_4b30_9BA8_121140C04671" name="MIM taal" value="NL" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
-					<tag xmi:id="EAID_29AEA333_0774_47bc_B53D_C17C43423833" name="MIM versie" value="1.1.1" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
+					<tag xmi:id="EAID_3B9D7FED_1536_3715_9947_B4F71FC8FDE3" name="IsAfgeleid" value="Zie package#NOTES#Values: Nee,Ja,Zie package&#xA;Default: Zie package&#xA;Description: Deze constructie is al dan niet afgeleid van een &quot;supplier model&quot;. Wanneer je niks opgeeft wordt afleiding vastgesteld op basis van het package waarin het voorkomt.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
+					<tag xmi:id="EAID_8566EBDA_6084_4b30_9BA8_121140C04671" name="MIM-taal" value="NL" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
+					<tag xmi:id="EAID_29AEA333_0774_47bc_B53D_C17C43423833" name="MIM-versie" value="1.1.1" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_0845F168_D511_c1d5_ADF3_BD1CEF0AAC4B" name="Niveau" value="specifiek#NOTES#Values: generiek,specifiek&#xA;Default: specifiek&#xA;Description: Het niveau is een waarde uit een beperkte set: &quot;algemeen&quot; betekent dat het model een fundament is van een ander model en moet worden opgenomen. Het modelleert generieke constructies die deel uitmaken van de echte wereld. Dit omvat meestal abstracte object typen. Het kan andere constructen bevatten. &quot;specifiek&quot; betekent dat het model een bepaald domein beschrijft of een samenhangend deel ervan .&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_37A3B9EB_D24E_4537_95DC_E4D6E940C093" name="Relatiemodelleringstype" value="Relatiesoort leidend" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_AE6E8278_51D2_4671_AFD2_802F766877F0" name="Release" value="20240613" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
@@ -230,11 +230,11 @@
 					<tag xmi:id="EAID_D9876FD8_BAC1_aeba_A963_ED133C968076" name="Supplier-project" value="#NOTES#Description: De naam van het supplier project. Alleen opnemen wanneer van afleiding sprake is.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_54EFC2C2_0DAB_170d_AE28_AF47233C16B4" name="Supplier-release" value="#NOTES#Description: De release van het supplier model. Alleen opnemen wanneer van afleiding sprake is.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 					<tag xmi:id="EAID_50A2721A_0763_3c07_B659_A56DC002A186" name="Toelichting" value="#NOTES#Description: TODO&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
-					<tag xmi:id="EAID_42A966BB_1184_1b11_9A49_37A1B9B34C93" name="Versie ID" value="#NOTES#Description: De identificatie van de versie/revisie van dit model of model-element in het gehanteerde versiebeheersysteem.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
-					<tag xmi:id="EAID_39D646FF_DC48_6fdc_830B_B0091054B129" name="Web locatie" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
+					<tag xmi:id="EAID_42A966BB_1184_1b11_9A49_37A1B9B34C93" name="VersieID" value="#NOTES#Description: De identificatie van de versie/revisie van dit model of model-element in het gehanteerde versiebeheersysteem.&#xA;" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
+					<tag xmi:id="EAID_39D646FF_DC48_6fdc_830B_B0091054B129" name="Weblocatie" modelElement="EAID_C88B8796_0CFB_4e75_9DA0_00808CB762D9"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={A19CEE58-313B-4857-8EF1-2781A71428FB}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Basismodel;GUID={15B7855F-B629-4663-8FE9-03A85FC59C37};FQName=NEN3610-KAD Grouping (NL)::Basismodel;@ENDSTEREO;$DES;$CLT={C88B8796-0CFB-4e75-9DA0-00808CB762D9}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
-				<extendedProperties tagged="0" package_name="Werkomgeving template"/>
+				<extendedProperties tagged="0" package_name="WerkomgevingTemplate"/>
 				<packageproperties version="1.0"/>
 				<paths/>
 				<times created="2024-01-23 11:52:16" modified="2024-06-14 11:00:27"/>
@@ -247,9 +247,9 @@
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_FB3F1EDB_D5E1_66d5_A1A0_7E55B1557B72" name="Datum opname" value="#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
+					<tag xmi:id="EAID_FB3F1EDB_D5E1_66d5_A1A0_7E55B1557B72" name="DatumOpname" value="#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
 					<tag xmi:id="EAID_6B33862D_AA33_fcaa_AE39_201E1A094FCE" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
-					<tag xmi:id="EAID_1FAA1D3E_80C4_5c80_993F_82B9B708C0FE" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
+					<tag xmi:id="EAID_1FAA1D3E_80C4_5c80_993F_82B9B708C0FE" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
 					<tag xmi:id="EAID_83B4E541_A087_46a0_9779_332B4463F874" name="Locatie" value="#NOTES#Description: Als het type van het attribuutsoort een waardenlijst is, dan wordt hier de locatie waar deze te vinden is opgegeven.&#xA;" modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
 					<tag xmi:id="EAID_492B06C3_77E8_4d3e_8D50_075715AA0517" name="Release" value="20240613" modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
 					<tag xmi:id="EAID_50A2721A_6060_8c60_8C5F_B9B857115554" name="Toelichting" value="&lt;memo&gt;#NOTES#Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." modelElement="EAID_EFD9F21A_03F7_4a77_84F9_49DEBA922044"/>
@@ -269,14 +269,14 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_4E9D_974e_AFD6_E313C0482E97" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
-					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_979A_404190F05E75" name="Datum opname" value="25-01-2024#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
+					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_979A_404190F05E75" name="DatumOpname" value="25-01-2024#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
 					<tag xmi:id="EAID_6B33862D_C751_5dc7_98F1_B44A93DE3EEE" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
-					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8930_61C3A22AE96B" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
-					<tag xmi:id="EAID_C0A3F875_2619_d526_933F_A96FBF69843B" name="Indicatie abstract object" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
+					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8930_61C3A22AE96B" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
+					<tag xmi:id="EAID_C0A3F875_2619_d526_933F_A96FBF69843B" name="IndicatieAbstractObject" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
 					<tag xmi:id="EAID_B108BD8E_2332_7b23_9632_81DA3BA0B1DE" name="Kwaliteit" value="#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
 					<tag xmi:id="EAID_2D3C6693_CC37_aecc_9FCE_9B4C1FB8F74A" name="Populatie" value="&lt;memo&gt;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
 					<tag xmi:id="EAID_50A2721A_D0BE_44d0_BF76_8C27A0C15FD6" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
-					<tag xmi:id="EAID_37220EB5_D859_e1d8_BEF7_7F59A017C492" name="Unieke aanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
+					<tag xmi:id="EAID_37220EB5_D859_e1d8_BEF7_7F59A017C492" name="UniekeAanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
 					<tag xmi:id="EAID_CA05E1F0_EB4D_41bd_8E28_229511557B68" name="uri" value="http://www.w3.org/2004/02/skos/core#Concept" modelElement="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={1B7C0F55-072F-46be-A0F9-8DA09F1CE070}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Objecttype;FQName=MIM::Objecttype;@ENDSTEREO;$DES;$CLT={1FBB7B14-F45B-4d9b-96F3-1CCC5BB5EE16}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -297,17 +297,17 @@
 						<tags>
 							<tag xmi:id="EAID_10A82D1C_128B_4a65_99BB_15F2EE440D48" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_D0E63395_9D1C_4fa1_AB63_0C4826CAC76B" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_9A0115B6_865A_4216_AC0B_E402C913DEEF" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_9A0115B6_865A_4216_AC0B_E402C913DEEF" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_AF1A78D1_EB58_4cd5_98BE_74546BCC194F" name="Toelichting" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_1E439C19_5D1A_4147_A2B5_E8C94BB281F9" name="Datum opname" value="25-01-2024" notes=" De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_1E439C19_5D1A_4147_A2B5_E8C94BB281F9" name="DatumOpname" value="25-01-2024" notes=" De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_7DD75653_023A_4bf9_B2A4_EF9EC5670CCF" name="Lengte" notes="Description: De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze.&#xA;"/>
 							<tag xmi:id="EAID_4F92209A_0A2C_453a_BA9C_C4ADCCF762C1" name="Patroon" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_3F0BA9C3_B117_48a7_814F_06B6422FB26C" name="Formeel patroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
-							<tag xmi:id="EAID_EF613E6A_FAA8_4cbd_A86E_FD993EEB9C13" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-							<tag xmi:id="EAID_31E86463_CEEE_4735_BF36_2916713D9415" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_3F0BA9C3_B117_48a7_814F_06B6422FB26C" name="FormeelPatroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
+							<tag xmi:id="EAID_EF613E6A_FAA8_4cbd_A86E_FD993EEB9C13" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_31E86463_CEEE_4735_BF36_2916713D9415" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
 							<tag xmi:id="EAID_B149FEAD_779F_4c01_8587_94EED3CD0536" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-							<tag xmi:id="EAID_387BF020_FB9C_40e6_B100_F4AF3A6C497E" name="Indicatie classificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
-							<tag xmi:id="EAID_CB9F6287_4FE0_4a26_848E_026D1D74ABCE" name="Mogelijk geen waarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+							<tag xmi:id="EAID_387BF020_FB9C_40e6_B100_F4AF3A6C497E" name="IndicatieClassificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
+							<tag xmi:id="EAID_CB9F6287_4FE0_4a26_848E_026D1D74ABCE" name="Mogelijkgeenwaarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
 							<tag xmi:id="EAID_B0E9D4D5_C34E_445e_8A6E_038B59A3D785" name="uniqueLang" value="true"/>
 							<tag xmi:id="EAID_7468A955_0AEE_4d71_89F5_BEA754FAAC30" name="URI" value="http://www.w3.org/2004/02/skos/core#prefLabel"/>
 						</tags>
@@ -328,17 +328,17 @@
 						<tags>
 							<tag xmi:id="EAID_17DC6483_32B9_4460_8C21_6D36CC2F3C4C" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_900E9AF8_9261_4547_96EA_522733314B3B" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_4CA3217B_BAD7_4fdc_B54E_997146E7DC21" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_4CA3217B_BAD7_4fdc_B54E_997146E7DC21" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_E2805606_5C19_47ce_ACC7_F896E1ECB818" name="Toelichting" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_E758E242_6493_4474_ADC2_8E21A86EDC87" name="Datum opname" value="25-01-2024" notes=" De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_E758E242_6493_4474_ADC2_8E21A86EDC87" name="DatumOpname" value="25-01-2024" notes=" De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_468F2DAC_B72E_4af2_BCAB_BE6D28BB0139" name="Lengte" notes="Description: De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze.&#xA;"/>
 							<tag xmi:id="EAID_664AC4A1_A424_44fc_ACB1_7F574279717A" name="Patroon" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_7FE5981D_D9B6_49ff_A3D0_88729786E453" name="Formeel patroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
-							<tag xmi:id="EAID_1929663C_3E09_4dee_9558_ECBEC504465F" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-							<tag xmi:id="EAID_DC627F31_2244_472a_A5F7_777F61177A34" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_7FE5981D_D9B6_49ff_A3D0_88729786E453" name="FormeelPatroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
+							<tag xmi:id="EAID_1929663C_3E09_4dee_9558_ECBEC504465F" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_DC627F31_2244_472a_A5F7_777F61177A34" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
 							<tag xmi:id="EAID_D1A4FC4F_A553_4a94_B436_C7869F036495" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-							<tag xmi:id="EAID_A4612203_EBDB_4c27_9A4C_A68AA6AF510C" name="Indicatie classificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
-							<tag xmi:id="EAID_49A65CEA_DE3E_4a7f_934D_AB4A11B1D75D" name="Mogelijk geen waarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+							<tag xmi:id="EAID_A4612203_EBDB_4c27_9A4C_A68AA6AF510C" name="IndicatieClassificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
+							<tag xmi:id="EAID_49A65CEA_DE3E_4a7f_934D_AB4A11B1D75D" name="MogelijkGeenWaarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
 							<tag xmi:id="EAID_0BE03CCF_6693_48dd_AEE6_358DF922BA75" name="URI" value="http://www.w3.org/2004/02/skos/core#altLabel"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={8DA32382-7BC5-4c02-8C41-5CAA834D1CB1}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Attribuutsoort;FQName=MIM::Attribuutsoort;@ENDSTEREO;$DES;$CLT={D1AB7774-7E50-4cae-A5AC-BB6608DD9CA7}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -358,17 +358,17 @@
 						<tags>
 							<tag xmi:id="EAID_AF16F712_6A12_49c0_A12D_723FDD8A13ED" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_B216D394_E024_42b3_B9CD_DCEA1F823171" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_82FEA2D6_4F59_4232_BEA9_614EEE280327" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_82FEA2D6_4F59_4232_BEA9_614EEE280327" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_63DAAC57_A741_4dd7_AC0F_0DD0F406B5D9" name="Toelichting" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_23858196_C566_4cdc_8E77_A316441746B5" name="Datum opname" value="25-01-2024" notes=" De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_23858196_C566_4cdc_8E77_A316441746B5" name="DatumOpname" value="25-01-2024" notes=" De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_8537F6A2_B913_4d51_8814_D1C42AFCCDE2" name="Lengte" notes="Description: De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze.&#xA;"/>
 							<tag xmi:id="EAID_66F542DA_4AFB_4451_BFC6_23EBDCABE5B1" name="Patroon" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_777BD932_CB17_4bde_B067_DA6C4195DC2C" name="Formeel patroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
-							<tag xmi:id="EAID_C24A0B46_5947_4956_ADB3_ADAFC81CC6ED" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-							<tag xmi:id="EAID_7E9D9034_9F18_4f38_BA93_E8201CF4FDB3" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_777BD932_CB17_4bde_B067_DA6C4195DC2C" name="FormeelPatroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
+							<tag xmi:id="EAID_C24A0B46_5947_4956_ADB3_ADAFC81CC6ED" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_7E9D9034_9F18_4f38_BA93_E8201CF4FDB3" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
 							<tag xmi:id="EAID_D3046FF5_F3C2_4e24_9FCF_B2A633FBE62A" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-							<tag xmi:id="EAID_95415275_7D5F_4683_B855_5A6049428C2B" name="Indicatie classificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
-							<tag xmi:id="EAID_FFDF5DC5_01E3_4671_B8E9_E3FF5BC2B394" name="Mogelijk geen waarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+							<tag xmi:id="EAID_95415275_7D5F_4683_B855_5A6049428C2B" name="IndicatieClassificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
+							<tag xmi:id="EAID_FFDF5DC5_01E3_4671_B8E9_E3FF5BC2B394" name="MogelijkGeenWaarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
 							<tag xmi:id="EAID_D308F321_DC28_4780_9F44_9207510CBBEC" name="URI" value="http://www.w3.org/2000/01/rdf-schema#comment"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={CF197E72-0F7F-41b5-93E4-2DEBCC8448E6}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Attribuutsoort;FQName=MIM::Attribuutsoort;@ENDSTEREO;$DES;$CLT={4C50FD66-2DD3-4a04-893B-F8550D530C02}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -388,17 +388,17 @@
 						<tags>
 							<tag xmi:id="EAID_6B33862D_45B3_a345_8DFC_9CE66718D65E" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_EBF7A679_CC7F_45cc_AAB5_CE2CD6386023" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_1FAA1D3E_7C44_9b7c_9317_CCD32C44412D" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_1FAA1D3E_7C44_9b7c_9317_CCD32C44412D" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_50A2721A_4BE0_b74b_87F3_3D8A188B3943" name="Toelichting" value="&lt;memo&gt;" notes="Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding."/>
-							<tag xmi:id="EAID_FB3F1EDB_3161_ef31_928E_47B8739C6FBF" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_FB3F1EDB_3161_ef31_928E_47B8739C6FBF" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_034EE5FF_0C05_9d0c_886B_29363439E130" name="Lengte" notes="Description: De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze.&#xA;"/>
 							<tag xmi:id="EAID_98327E03_64C9_4564_BE5D_E295540AEE8B" name="Patroon" value="&lt;memo&gt;" notes="De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur."/>
-							<tag xmi:id="EAID_69EB40AD_8D73_c38d_B453_F099026DC383" name="Formeel patroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
-							<tag xmi:id="EAID_8F70DA6F_38F5_1138_8403_BC50E9FEBB07" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-							<tag xmi:id="EAID_D0DCC9FB_CF01_a7cf_9C7F_11ADA16DCEBB" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_69EB40AD_8D73_c38d_B453_F099026DC383" name="FormeelPatroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
+							<tag xmi:id="EAID_8F70DA6F_38F5_1138_8403_BC50E9FEBB07" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_D0DCC9FB_CF01_a7cf_9C7F_11ADA16DCEBB" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
 							<tag xmi:id="EAID_0BFEBE52_7758_5c77_A382_F1C7797AEA50" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-							<tag xmi:id="EAID_516262A9_6E2F_7c6e_B5A8_7121F7576611" name="Indicatie classificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
-							<tag xmi:id="EAID_BE7DA005_D88B_42d8_97B6_A1C93ACDE912" name="Mogelijk geen waarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+							<tag xmi:id="EAID_516262A9_6E2F_7c6e_B5A8_7121F7576611" name="IndicatieClassificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
+							<tag xmi:id="EAID_BE7DA005_D88B_42d8_97B6_A1C93ACDE912" name="MogelijkGeenWaarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={1C498DB0-B9B1-4f9f-B369-9407C6C4B7EC}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Attribuutsoort;FQName=MIM::Attribuutsoort;@ENDSTEREO;$DES;$CLT={32C718C7-DAEA-4d57-BD76-A9C847A65B43}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
@@ -414,9 +414,9 @@
 				<code gentype="Java"/>
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
-					<tag xmi:id="EAID_FB3F1EDB_FC42_e1fc_9847_17DEA02F444A" name="Datum opname" value="#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_CB4832D1_3BC4_4202_AD8D_E6C06B5EE26B"/>
+					<tag xmi:id="EAID_FB3F1EDB_FC42_e1fc_9847_17DEA02F444A" name="DatumOpname" value="#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_CB4832D1_3BC4_4202_AD8D_E6C06B5EE26B"/>
 					<tag xmi:id="EAID_6B33862D_C814_49c8_A5AB_D2C7294C77A7" name="Herkomst" value="#NOTES#Description: De naam van een modelelement.&#xA;" modelElement="EAID_CB4832D1_3BC4_4202_AD8D_E6C06B5EE26B"/>
-					<tag xmi:id="EAID_1FAA1D3E_2BE5_ed2b_B6A5_A25F5606EB03" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_CB4832D1_3BC4_4202_AD8D_E6C06B5EE26B"/>
+					<tag xmi:id="EAID_1FAA1D3E_2BE5_ed2b_B6A5_A25F5606EB03" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_CB4832D1_3BC4_4202_AD8D_E6C06B5EE26B"/>
 					<tag xmi:id="EAID_48804EAF_A964_45d8_86E1_FC226FACF1B9" name="Release" value="20240613" modelElement="EAID_CB4832D1_3BC4_4202_AD8D_E6C06B5EE26B"/>
 					<tag xmi:id="EAID_50A2721A_BEA1_1bbe_910E_7184374B7783" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_CB4832D1_3BC4_4202_AD8D_E6C06B5EE26B"/>
 				</tags>
@@ -435,14 +435,14 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_4E9D_974e_A6BD_6A4853084C60" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
-					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_928F_E0EC7FC21CBF" name="Datum opname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
+					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_928F_E0EC7FC21CBF" name="DatumOpname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
 					<tag xmi:id="EAID_6B33862D_C751_5dc7_A8E0_2B1022EE4503" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
-					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_83FA_B0440E8517A8" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
-					<tag xmi:id="EAID_C0A3F875_2619_d526_A56D_DFAF04936CA7" name="Indicatie abstract object" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
+					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_83FA_B0440E8517A8" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
+					<tag xmi:id="EAID_C0A3F875_2619_d526_A56D_DFAF04936CA7" name="IndicatieAbstractObject" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
 					<tag xmi:id="EAID_B108BD8E_2332_7b23_B984_6569A30D3792" name="Kwaliteit" value="#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
 					<tag xmi:id="EAID_2D3C6693_CC37_aecc_98EB_DD165F3AA6E5" name="Populatie" value="&lt;memo&gt;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
 					<tag xmi:id="EAID_50A2721A_D0BE_44d0_BE5B_E17FAD39801D" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
-					<tag xmi:id="EAID_37220EB5_D859_e1d8_A056_62098F6CDD7F" name="Unieke aanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
+					<tag xmi:id="EAID_37220EB5_D859_e1d8_A056_62098F6CDD7F" name="UniekeAanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_5CE7A56A_F69F_46ad_B934_12D0E5289D79"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={71F200EF-CF24-4b3d-827A-1E47BDE1967D}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Objecttype;FQName=MIM::Objecttype;@ENDSTEREO;$DES;$CLT={5CE7A56A-F69F-46ad-B934-12D0E5289D79}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Specificaties"/>
@@ -461,14 +461,14 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_4E9D_974e_B4BD_54DE6E573F65" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
-					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_BD0F_312AA1D87FD2" name="Datum opname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
+					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_BD0F_312AA1D87FD2" name="DatumOpname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
 					<tag xmi:id="EAID_6B33862D_C751_5dc7_AFA5_8A53D99A095A" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
-					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8E95_0A715D12ACB5" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
-					<tag xmi:id="EAID_C0A3F875_2619_d526_A524_AC2C74E3B491" name="Indicatie abstract object" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
+					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8E95_0A715D12ACB5" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
+					<tag xmi:id="EAID_C0A3F875_2619_d526_A524_AC2C74E3B491" name="IndicatieAbstractObject" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
 					<tag xmi:id="EAID_B108BD8E_2332_7b23_81CF_B3CEAAA259BF" name="Kwaliteit" value="#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
 					<tag xmi:id="EAID_2D3C6693_CC37_aecc_A6C2_61EF26EA114D" name="Populatie" value="&lt;memo&gt;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
 					<tag xmi:id="EAID_50A2721A_D0BE_44d0_8C98_BBFC9FB0AA54" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
-					<tag xmi:id="EAID_37220EB5_D859_e1d8_BC26_FE957649EB24" name="Unieke aanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
+					<tag xmi:id="EAID_37220EB5_D859_e1d8_BC26_FE957649EB24" name="UniekeAanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_18B78231_7810_4ebd_88F7_8B0168785BC2"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={F21F2717-9748-49ca-B220-EB39EFC9D159}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Objecttype;FQName=MIM::Objecttype;@ENDSTEREO;$DES;$CLT={18B78231-7810-4ebd-88F7-8B0168785BC2}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Specificaties"/>
@@ -484,14 +484,14 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_4E9D_974e_AB71_057AC8BA9103" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
-					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_B1C5_C038D5C4CEA2" name="Datum opname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
+					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_B1C5_C038D5C4CEA2" name="DatumOpname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
 					<tag xmi:id="EAID_6B33862D_C751_5dc7_91BB_A027669B1502" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
-					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8C6A_876E7569FD07" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
-					<tag xmi:id="EAID_C0A3F875_2619_d526_870A_DA58E0DE1B0A" name="Indicatie abstract object" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
+					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8C6A_876E7569FD07" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
+					<tag xmi:id="EAID_C0A3F875_2619_d526_870A_DA58E0DE1B0A" name="IndicatieAbstractObject" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
 					<tag xmi:id="EAID_B108BD8E_2332_7b23_B0D7_F9579712A0AC" name="Kwaliteit" value="#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
 					<tag xmi:id="EAID_2D3C6693_CC37_aecc_A1DE_3F8052D4EA33" name="Populatie" value="&lt;memo&gt;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
 					<tag xmi:id="EAID_50A2721A_D0BE_44d0_8E05_F25684E03A56" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
-					<tag xmi:id="EAID_37220EB5_D859_e1d8_94D7_4BA9EB6000A5" name="Unieke aanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
+					<tag xmi:id="EAID_37220EB5_D859_e1d8_94D7_4BA9EB6000A5" name="UniekeAanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_863DAC0D_872D_4df0_9EDD_C9EDBC4834E8"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={5B669005-5DB5-4a62-B9E9-90E2342917E3}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Objecttype;FQName=MIM::Objecttype;@ENDSTEREO;$DES;$CLT={863DAC0D-872D-4df0-9EDD-C9EDBC4834E8}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Specificaties"/>
@@ -507,14 +507,14 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_4E9D_974e_99E7_002A3A7139D4" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
-					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_8A6D_8EC22B42F515" name="Datum opname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
+					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_8A6D_8EC22B42F515" name="DatumOpname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
 					<tag xmi:id="EAID_6B33862D_C751_5dc7_8177_44E65CB6BC04" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
-					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_A1A0_08B53CF80365" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
-					<tag xmi:id="EAID_C0A3F875_2619_d526_9820_3CDCA62ACDD4" name="Indicatie abstract object" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
+					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_A1A0_08B53CF80365" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
+					<tag xmi:id="EAID_C0A3F875_2619_d526_9820_3CDCA62ACDD4" name="IndicatieAbstractObject" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
 					<tag xmi:id="EAID_B108BD8E_2332_7b23_BD97_492EBAB6A804" name="Kwaliteit" value="#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
 					<tag xmi:id="EAID_2D3C6693_CC37_aecc_A1F5_0A3B127A322A" name="Populatie" value="&lt;memo&gt;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
 					<tag xmi:id="EAID_50A2721A_D0BE_44d0_82EA_CB02DCAEA212" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
-					<tag xmi:id="EAID_37220EB5_D859_e1d8_83DE_8E31C75EE79A" name="Unieke aanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
+					<tag xmi:id="EAID_37220EB5_D859_e1d8_83DE_8E31C75EE79A" name="UniekeAanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_789027D2_DCD7_4f71_BB49_EBB826C3EA58"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={AC10CCA1-6589-4297-8363-ADB79C4252DD}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Objecttype;FQName=MIM::Objecttype;@ENDSTEREO;$DES;$CLT={789027D2-DCD7-4f71-BB49-EBB826C3EA58}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Specificaties"/>
@@ -534,17 +534,17 @@
 						<tags>
 							<tag xmi:id="EAID_6B33862D_45B3_a345_ACA3_E21DAD00E623" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_EBF7A679_CC7F_45cc_BC30_C5F9D208C15C" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_1FAA1D3E_7C44_9b7c_BBBE_3FFFD3753BA1" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_1FAA1D3E_7C44_9b7c_BBBE_3FFFD3753BA1" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_50A2721A_4BE0_b74b_8939_72FFAEB94257" name="Toelichting" value="&lt;memo&gt;" notes="Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding."/>
-							<tag xmi:id="EAID_FB3F1EDB_3161_ef31_AEF3_22CBF3E396EF" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_FB3F1EDB_3161_ef31_AEF3_22CBF3E396EF" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_034EE5FF_0C05_9d0c_B448_AABC57B00B11" name="Lengte" notes="Description: De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze.&#xA;"/>
 							<tag xmi:id="EAID_98327E03_64C9_4564_B493_E25BA84C400D" name="Patroon" value="&lt;memo&gt;" notes="De verzameling van waarden die gegevens van deze attribuutsoort kunnen hebben, oftewel het waardenbereik, uitgedrukt in een specifieke structuur."/>
-							<tag xmi:id="EAID_69EB40AD_8D73_c38d_A365_19AEB18C5DAA" name="Formeel patroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
-							<tag xmi:id="EAID_8F70DA6F_38F5_1138_B20C_234B3EFD2AC6" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-							<tag xmi:id="EAID_D0DCC9FB_CF01_a7cf_940F_8FBEF8285A75" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_69EB40AD_8D73_c38d_A365_19AEB18C5DAA" name="FormeelPatroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
+							<tag xmi:id="EAID_8F70DA6F_38F5_1138_B20C_234B3EFD2AC6" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_D0DCC9FB_CF01_a7cf_940F_8FBEF8285A75" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
 							<tag xmi:id="EAID_0BFEBE52_7758_5c77_B1DE_56CFE0E2AC25" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-							<tag xmi:id="EAID_516262A9_6E2F_7c6e_AA02_2A6E4067FEA6" name="Indicatie classificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
-							<tag xmi:id="EAID_BE7DA005_D88B_42d8_94D0_364CB5B6F12E" name="Mogelijk geen waarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+							<tag xmi:id="EAID_516262A9_6E2F_7c6e_AA02_2A6E4067FEA6" name="IndicatieClassificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
+							<tag xmi:id="EAID_BE7DA005_D88B_42d8_94D0_364CB5B6F12E" name="MogelijkGeenWaarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={08D5E39A-121A-4b56-BDFD-F060BD92EE05}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Attribuutsoort;FQName=MIM::Attribuutsoort;@ENDSTEREO;$DES;$CLT={6FBC5A0B-8757-4846-91CD-6BAD91501B3A}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
@@ -561,14 +561,14 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_4E9D_974e_9789_B88DAA8930E9" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
-					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_9FF4_9FC20EE73415" name="Datum opname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
+					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_9FF4_9FC20EE73415" name="DatumOpname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
 					<tag xmi:id="EAID_6B33862D_C751_5dc7_8BF9_735E7526EECA" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
-					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_AFA8_C5817426E494" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
-					<tag xmi:id="EAID_C0A3F875_2619_d526_A6DF_E7706C072AD5" name="Indicatie abstract object" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
+					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_AFA8_C5817426E494" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
+					<tag xmi:id="EAID_C0A3F875_2619_d526_A6DF_E7706C072AD5" name="IndicatieAbstractObject" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
 					<tag xmi:id="EAID_B108BD8E_2332_7b23_A5A7_DC37688949DF" name="Kwaliteit" value="#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
 					<tag xmi:id="EAID_2D3C6693_CC37_aecc_BD44_5956D069D3C0" name="Populatie" value="&lt;memo&gt;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
 					<tag xmi:id="EAID_50A2721A_D0BE_44d0_85F1_19932A7307B9" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
-					<tag xmi:id="EAID_37220EB5_D859_e1d8_9D46_F2BA4AE91D1C" name="Unieke aanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
+					<tag xmi:id="EAID_37220EB5_D859_e1d8_9D46_F2BA4AE91D1C" name="UniekeAanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_45389EBA_F826_44dc_B0D3_17D8F1391737"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={846DBCA8-0F0D-4b4d-865D-CC28A289B963}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Objecttype;FQName=MIM::Objecttype;@ENDSTEREO;$DES;$CLT={45389EBA-F826-44dc-B0D3-17D8F1391737}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Specificaties"/>
@@ -586,14 +586,14 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_4E9D_974e_BDBA_4DC4D339F4BE" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
-					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_A119_DD7CC1422064" name="Datum opname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
+					<tag xmi:id="EAID_FB3F1EDB_51FF_2d51_A119_DD7CC1422064" name="DatumOpname" value="&lt;date&gt;#NOTES#Default: &lt;date&gt;&#xA;Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
 					<tag xmi:id="EAID_6B33862D_C751_5dc7_B654_635ECCB0DCDF" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
-					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8045_9353C3BDBD60" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
-					<tag xmi:id="EAID_C0A3F875_2619_d526_9C6D_87B6DC632EE4" name="Indicatie abstract object" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
+					<tag xmi:id="EAID_1FAA1D3E_1B62_631b_8045_9353C3BDBD60" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
+					<tag xmi:id="EAID_C0A3F875_2619_d526_9C6D_87B6DC632EE4" name="IndicatieAbstractObject" value="#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ��n of meerdere objecttypes die niet abstract zijn.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
 					<tag xmi:id="EAID_B108BD8E_2332_7b23_93B8_EDD60071ECFA" name="Kwaliteit" value="#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
 					<tag xmi:id="EAID_2D3C6693_CC37_aecc_BE88_C12F5DF6B751" name="Populatie" value="&lt;memo&gt;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
 					<tag xmi:id="EAID_50A2721A_D0BE_44d0_934E_20A80CF918CD" name="Toelichting" value="&lt;memo&gt;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
-					<tag xmi:id="EAID_37220EB5_D859_e1d8_A853_5EBA2D37F644" name="Unieke aanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
+					<tag xmi:id="EAID_37220EB5_D859_e1d8_A853_5EBA2D37F644" name="UniekeAanduiding" value="#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.&#xA;" modelElement="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={1B305A30-88F6-47c4-9BF7-9B2F83B7B735}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Objecttype;FQName=MIM::Objecttype;@ENDSTEREO;$DES;$CLT={CB6395CA-0336-465e-B15B-AA7C8720EC0B}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Specificaties"/>
@@ -613,17 +613,17 @@
 						<tags>
 							<tag xmi:id="EAID_6B33862D_45B3_a345_9BD6_B9D7F8C62C85" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_EBF7A679_CC7F_45cc_A6AE_D270E34C8343" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_1FAA1D3E_7C44_9b7c_B1D1_2168B353C6F5" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_1FAA1D3E_7C44_9b7c_B1D1_2168B353C6F5" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_50A2721A_4BE0_b74b_B44F_DB803C544B16" name="Toelichting" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_FB3F1EDB_3161_ef31_A52D_49B635EC8EC8" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_FB3F1EDB_3161_ef31_A52D_49B635EC8EC8" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_034EE5FF_0C05_9d0c_80C7_58C975258E67" name="Lengte" notes="Description: De aanduiding van de lengte van een gegeven, volgens de aangegeven notatiewijze.&#xA;"/>
 							<tag xmi:id="EAID_98327E03_64C9_4564_82B6_37032431AEA1" name="Patroon" value="&lt;memo&gt;"/>
-							<tag xmi:id="EAID_69EB40AD_8D73_c38d_A778_AF846105C4BD" name="Formeel patroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
-							<tag xmi:id="EAID_8F70DA6F_38F5_1138_9BC0_39741C6F547C" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-							<tag xmi:id="EAID_D0DCC9FB_CF01_a7cf_A47C_3ABBF8543D5F" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_69EB40AD_8D73_c38d_A778_AF846105C4BD" name="FormeelPatroon" notes="Description: Zoals patroon, formeel vastgelegd, uitgedrukt in een formele taal die door de computer wordt herkend.&#xA;"/>
+							<tag xmi:id="EAID_8F70DA6F_38F5_1138_9BC0_39741C6F547C" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+							<tag xmi:id="EAID_D0DCC9FB_CF01_a7cf_A47C_3ABBF8543D5F" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
 							<tag xmi:id="EAID_0BFEBE52_7758_5c77_97A6_22F8E4BB9E9E" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-							<tag xmi:id="EAID_516262A9_6E2F_7c6e_97DD_F47E07A8074E" name="Indicatie classificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
-							<tag xmi:id="EAID_BE7DA005_D88B_42d8_99ED_ECD204773195" name="Mogelijk geen waarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+							<tag xmi:id="EAID_516262A9_6E2F_7c6e_97DD_F47E07A8074E" name="IndicatieClassificerend" notes="Values: Ja,Nee&#xA;Description: Indicatie dat een attribuutsoort het objecttype waar het bij hoort classificeert in (sub)typen.&#xA;"/>
+							<tag xmi:id="EAID_BE7DA005_D88B_42d8_99ED_ECD204773195" name="MogelijkGeenWaarde" value="Nee" notes="Values: Ja,Nee&#xA;Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={48559A25-F699-40f3-A095-F0AD26F13FCB}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Attribuutsoort;FQName=MIM::Attribuutsoort;@ENDSTEREO;$DES;$CLT={E532544E-98D3-476b-B115-28A23B9FA541}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
@@ -642,15 +642,15 @@
 				<style appearance="BackColor=-1;BorderColor=-1;BorderWidth=-1;FontColor=-1;VSwimLanes=1;HSwimLanes=1;BorderStyle=0;"/>
 				<tags>
 					<tag xmi:id="EAID_EBF7A679_8FF3_0d8f_9F9E_C911F9092583" name="Begrip" value="#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;" modelElement="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522"/>
-					<tag xmi:id="EAID_FB3F1EDB_BBD5_a0bb_A29C_2FF4B3807E4F" name="Datum opname" value="#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522"/>
+					<tag xmi:id="EAID_FB3F1EDB_BBD5_a0bb_A29C_2FF4B3807E4F" name="DatumOpname" value="#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;" modelElement="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522"/>
 					<tag xmi:id="EAID_6B33862D_B627_69b6_98DA_40CDA2F4CE75" name="Herkomst" value="#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;" modelElement="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522"/>
-					<tag xmi:id="EAID_1FAA1D3E_0DB8_300d_A681_7D22A02E1772" name="Herkomst definitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522"/>
+					<tag xmi:id="EAID_1FAA1D3E_0DB8_300d_A681_7D22A02E1772" name="HerkomstDefinitie" value="#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;" modelElement="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522"/>
 					<tag xmi:id="EAID_50A2721A_57D4_6757_8D63_95D27626A148" name="Toelichting" value="&lt;memo&gt;#NOTES#Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding." modelElement="EAID_7E57E199_F79A_4ca6_BD02_4141D711B522"/>
 				</tags>
 				<xrefs value="$XREFPROP=$XID={33923D10-1250-49e8-92AD-2507329B6437}$XID;$NAM=Stereotypes$NAM;$TYP=element property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Enumeratie;FQName=MIM::Enumeratie;@ENDSTEREO;$DES;$CLT={7E57E199-F79A-4ca6-BD02-4141D711B522}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<extendedProperties tagged="0" package_name="Specificaties"/>
 				<attributes>
-					<attribute xmi:idref="EAID_4177BC2D_9545_4dda_A00D_8ECCDC4EAA05" name="aanbevolen standaard" scope="Public">
+					<attribute xmi:idref="EAID_4177BC2D_9545_4dda_A00D_8ECCDC4EAA05" name="aanbevolenStandaard" scope="Public">
 						<initial/>
 						<documentation/>
 						<model ea_localid="153" ea_guid="{4177BC2D-9545-4dda-A00D-8ECCDC4EAA05}"/>
@@ -665,14 +665,14 @@
 						<tags>
 							<tag xmi:id="EAID_6B33862D_2A5B_ab2a_B9BA_BD295C5CD6B9" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_EBF7A679_6727_3c67_8B74_74D0B55F1779" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_1FAA1D3E_52EC_a752_B3B7_8CC480288B2B" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_1FAA1D3E_52EC_a752_B3B7_8CC480288B2B" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_50A2721A_CF88_c0cf_B16F_4C79A560D3F0" name="Toelichting" value="&lt;memo&gt;" notes="Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding."/>
-							<tag xmi:id="EAID_FB3F1EDB_2A09_292a_8F38_66514687A283" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_FB3F1EDB_2A09_292a_8F38_66514687A283" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_00382EFB_EC29_58ec_B523_38812D54948A" name="Code" notes="Description: De in een registratie of informatiemodel aan de enumeratiewaarde toegekend unieke code&#xA;"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={87F366AE-1563-486b-9944-EB0ABA54104E}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Enumeratiewaarde;FQName=MIM::Enumeratiewaarde;@ENDSTEREO;$DES;$CLT={4177BC2D-9545-4dda-A00D-8ECCDC4EAA05}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
-					<attribute xmi:idref="EAID_277B8F0B_D861_4cf8_AD5F_C1E20163D212" name="community standaard" scope="Public">
+					<attribute xmi:idref="EAID_277B8F0B_D861_4cf8_AD5F_C1E20163D212" name="communityStandaard" scope="Public">
 						<initial/>
 						<documentation/>
 						<model ea_localid="152" ea_guid="{277B8F0B-D861-4cf8-AD5F-C1E20163D212}"/>
@@ -687,14 +687,14 @@
 						<tags>
 							<tag xmi:id="EAID_6B33862D_2A5B_ab2a_AF6E_03107D88385C" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_EBF7A679_6727_3c67_87CA_3AA922BC4B5E" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_1FAA1D3E_52EC_a752_AC0F_4EC3E46555A5" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_1FAA1D3E_52EC_a752_AC0F_4EC3E46555A5" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_50A2721A_CF88_c0cf_BAB7_B0F7F7E1B3E9" name="Toelichting" value="&lt;memo&gt;" notes="Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding."/>
-							<tag xmi:id="EAID_FB3F1EDB_2A09_292a_B85D_FE51B002EAEC" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_FB3F1EDB_2A09_292a_B85D_FE51B002EAEC" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_00382EFB_EC29_58ec_B119_58A3B050064F" name="Code" notes="Description: De in een registratie of informatiemodel aan de enumeratiewaarde toegekend unieke code&#xA;"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={69A7FCC0-556F-4813-8F18-F1954B76D167}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Enumeratiewaarde;FQName=MIM::Enumeratiewaarde;@ENDSTEREO;$DES;$CLT={277B8F0B-D861-4cf8-AD5F-C1E20163D212}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 					</attribute>
-					<attribute xmi:idref="EAID_35630464_B555_47aa_BD13_C1BE7B710134" name="Verplichte standaard" scope="Public">
+					<attribute xmi:idref="EAID_35630464_B555_47aa_BD13_C1BE7B710134" name="VerplichteStandaard" scope="Public">
 						<initial/>
 						<documentation/>
 						<model ea_localid="154" ea_guid="{35630464-B555-47aa-BD13-C1BE7B710134}"/>
@@ -709,9 +709,9 @@
 						<tags>
 							<tag xmi:id="EAID_6B33862D_2A5B_ab2a_96CA_BA9B700C22B7" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
 							<tag xmi:id="EAID_EBF7A679_6727_3c67_A0DC_6E9DA86F697F" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-							<tag xmi:id="EAID_1FAA1D3E_52EC_a752_ACF0_F331CDB1F6D2" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+							<tag xmi:id="EAID_1FAA1D3E_52EC_a752_ACF0_F331CDB1F6D2" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 							<tag xmi:id="EAID_50A2721A_CF88_c0cf_BFF9_ACA41C29CEC6" name="Toelichting" value="&lt;memo&gt;" notes="Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding."/>
-							<tag xmi:id="EAID_FB3F1EDB_2A09_292a_9189_3952170F42B7" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+							<tag xmi:id="EAID_FB3F1EDB_2A09_292a_9189_3952170F42B7" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 							<tag xmi:id="EAID_00382EFB_EC29_58ec_9344_2FFED4B36A8B" name="Code" notes="Description: De in een registratie of informatiemodel aan de enumeratiewaarde toegekend unieke code&#xA;"/>
 						</tags>
 						<xrefs value="$XREFPROP=$XID={2409C430-B27A-4e57-BF89-A45EDF922FFA}$XID;$NAM=Stereotypes$NAM;$TYP=attribute property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Enumeratiewaarde;FQName=MIM::Enumeratiewaarde;@ENDSTEREO;$DES;$CLT={35630464-B555-47aa-BD13-C1BE7B710134}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
@@ -755,15 +755,15 @@
 				<xrefs value="$XREFPROP=$XID={6D149CB1-C8BE-4d84-9B3A-63051D9CF507}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Relatiesoort;FQName=MIM::Relatiesoort;@ENDSTEREO;$DES;$CLT={12C0C8AF-A19C-4c51-81AF-84A76CA7E1DA}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
 					<tag xmi:id="EAID_0BFEBE52_E81A_a6e8_B2C3_61C97AFD8710" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-					<tag xmi:id="EAID_1FAA1D3E_8F06_a38f_B09D_89EE61506CC2" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+					<tag xmi:id="EAID_1FAA1D3E_8F06_a38f_B09D_89EE61506CC2" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 					<tag xmi:id="EAID_50A2721A_D4E2_4fd4_B22F_4D3684E3C93B" name="Toelichting" value="&lt;memo&gt;"/>
 					<tag xmi:id="EAID_6B33862D_9DF5_b69d_86E3_143959D54C2D" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
-					<tag xmi:id="EAID_8F70DA6F_2637_1926_8619_2EA3A51B308A" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-					<tag xmi:id="EAID_BE7DA005_A3CD_9aa3_ACF2_E987BB4DD33F" name="Mogelijk geen waarde" value="Nee" notes="Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
-					<tag xmi:id="EAID_D0DCC9FB_83C3_ef83_ADF6_74E4705F8709" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
-					<tag xmi:id="EAID_E7872985_2D4D_a42d_A44D_C047151A7E2C" name="Indicatie afleidbaar" notes="Description: Aanduiding dat gegeven afleidbaar is uit andere attribuut- en/of relatiesoorten.&#xA;"/>
+					<tag xmi:id="EAID_8F70DA6F_2637_1926_8619_2EA3A51B308A" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+					<tag xmi:id="EAID_BE7DA005_A3CD_9aa3_ACF2_E987BB4DD33F" name="MogelijkGeenWaarde" value="Nee" notes="Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+					<tag xmi:id="EAID_D0DCC9FB_83C3_ef83_ADF6_74E4705F8709" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+					<tag xmi:id="EAID_E7872985_2D4D_a42d_A44D_C047151A7E2C" name="IndicatieAfleidbaar" notes="Description: Aanduiding dat gegeven afleidbaar is uit andere attribuut- en/of relatiesoorten.&#xA;"/>
 					<tag xmi:id="EAID_EBF7A679_2C41_c22c_8D7F_99DBE0F9A012" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-					<tag xmi:id="EAID_FB3F1EDB_DAA3_98da_88E2_7772F9B05B2B" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+					<tag xmi:id="EAID_FB3F1EDB_DAA3_98da_88E2_7772F9B05B2B" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 				</tags>
 			</connector>
 			<connector xmi:idref="EAID_64D98C36_D807_415b_A0BE_15A68EB80316">
@@ -799,7 +799,7 @@
 				<style/>
 				<xrefs value="$XREFPROP=$XID={C5495476-4BC7-4d9c-BE49-EE7488573BD7}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Generalisatie;FQName=MIM::Generalisatie;@ENDSTEREO;$DES;$CLT={64D98C36-D807-415b-A0BE-15A68EB80316}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_BE45_783E6E9915EE" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_BE45_783E6E9915EE" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 				</tags>
 			</connector>
 			<connector xmi:idref="EAID_C5B08EA5_2427_47ee_989C_8A56522149BB" name="conformeertAan">
@@ -837,15 +837,15 @@
 				<xrefs value="$XREFPROP=$XID={43A44188-6AFA-4d24-83FC-D4DD837BA705}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Relatiesoort;FQName=MIM::Relatiesoort;@ENDSTEREO;$DES;$CLT={C5B08EA5-2427-47ee-989C-8A56522149BB}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
 					<tag xmi:id="EAID_0BFEBE52_E81A_a6e8_AA2B_15FD30FA00EA" name="Authentiek" notes="Values: Authentiek,Basisgegeven,Wettelijk gegeven,Landelijk kerngegeven,Overig&#xA;Description: Aanduiding of het kenmerk een authentiek gegeven betreft.&#xA;"/>
-					<tag xmi:id="EAID_1FAA1D3E_8F06_a38f_8249_BC3E5CA73DCD" name="Herkomst definitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
+					<tag xmi:id="EAID_1FAA1D3E_8F06_a38f_8249_BC3E5CA73DCD" name="HerkomstDefinitie" notes="Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.&#xA;"/>
 					<tag xmi:id="EAID_50A2721A_D4E2_4fd4_8AA5_338E3C6E5729" name="Toelichting" value="&lt;memo&gt;"/>
 					<tag xmi:id="EAID_6B33862D_9DF5_b69d_90A2_58B2B62E2616" name="Herkomst" notes="Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.&#xA;"/>
-					<tag xmi:id="EAID_8F70DA6F_2637_1926_B0AE_7A0F78578657" name="Indicatie materi�le historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
-					<tag xmi:id="EAID_BE7DA005_A3CD_9aa3_A208_48AD8F5109F4" name="Mogelijk geen waarde" value="Nee" notes="Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
-					<tag xmi:id="EAID_D0DCC9FB_83C3_ef83_AAE5_FBC693E18538" name="Indicatie formele historie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
-					<tag xmi:id="EAID_E7872985_2D4D_a42d_A6C3_3876AE28486C" name="Indicatie afleidbaar" notes="Description: Aanduiding dat gegeven afleidbaar is uit andere attribuut- en/of relatiesoorten.&#xA;"/>
+					<tag xmi:id="EAID_8F70DA6F_2637_1926_B0AE_7A0F78578657" name="IndicatieMaterileHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de materi�le historie van het kenmerk van het object te bevragen is.&#xA;"/>
+					<tag xmi:id="EAID_BE7DA005_A3CD_9aa3_A208_48AD8F5109F4" name="MogelijkGeenWaarde" value="Nee" notes="Default: Nee&#xA;Description: Aanduiding dat van een aspect geen waarde is geregistreerd, maar dat onduidelijk is of de waarde er werkelijk ook niet is.&#xA;"/>
+					<tag xmi:id="EAID_D0DCC9FB_83C3_ef83_AAE5_FBC693E18538" name="IndicatieFormeleHistorie" notes="Values: Ja,Nee,Zie groep&#xA;Description: Indicatie of de formele historie van het kenmerk van het object bijgehouden wordt en te bevragen is.&#xA;"/>
+					<tag xmi:id="EAID_E7872985_2D4D_a42d_A6C3_3876AE28486C" name="IndicatieAfleidbaar" notes="Description: Aanduiding dat gegeven afleidbaar is uit andere attribuut- en/of relatiesoorten.&#xA;"/>
 					<tag xmi:id="EAID_EBF7A679_2C41_c22c_8F62_02F1469517B5" name="Begrip" notes="Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.&#xA;"/>
-					<tag xmi:id="EAID_FB3F1EDB_DAA3_98da_A7E3_53F78F2D17EE" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+					<tag xmi:id="EAID_FB3F1EDB_DAA3_98da_A7E3_53F78F2D17EE" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 				</tags>
 			</connector>
 			<connector xmi:idref="EAID_3837DA12_7BC1_43d1_AAEC_41E3CECC8021">
@@ -881,7 +881,7 @@
 				<style/>
 				<xrefs value="$XREFPROP=$XID={86C6AB12-E055-43d3-A656-1357042E5F1B}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Generalisatie;FQName=MIM::Generalisatie;@ENDSTEREO;$DES;$CLT={3837DA12-7BC1-43d1-AAEC-41E3CECC8021}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_81A2_9D22AC260033" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_81A2_9D22AC260033" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 				</tags>
 			</connector>
 			<connector xmi:idref="EAID_61336214_B282_4869_82D7_499D0AFC3E88">
@@ -917,7 +917,7 @@
 				<style/>
 				<xrefs value="$XREFPROP=$XID={D21EFE4A-B734-4b70-A0DF-51867FD52159}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Generalisatie;FQName=MIM::Generalisatie;@ENDSTEREO;$DES;$CLT={61336214-B282-4869-82D7-499D0AFC3E88}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_989E_C5156A55BD4E" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_989E_C5156A55BD4E" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 				</tags>
 			</connector>
 			<connector xmi:idref="EAID_8184594B_51E6_4bb5_995B_B3C82963DDFF">
@@ -953,7 +953,7 @@
 				<style/>
 				<xrefs value="$XREFPROP=$XID={5DBD8FF3-FEE7-4cee-860B-F4B40756907C}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Generalisatie;FQName=MIM::Generalisatie;@ENDSTEREO;$DES;$CLT={8184594B-51E6-4bb5-995B-B3C82963DDFF}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_B433_5C7AA5AA221B" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_B433_5C7AA5AA221B" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 				</tags>
 			</connector>
 			<connector xmi:idref="EAID_13863E32_8106_4aa3_9D73_D12225B2849C">
@@ -989,7 +989,7 @@
 				<style/>
 				<xrefs value="$XREFPROP=$XID={11B71766-4E11-4293-BDC9-6D45A8CB334F}$XID;$NAM=Stereotypes$NAM;$TYP=connector property$TYP;$VIS=Public$VIS;$PAR=0$PAR;$DES=@STEREO;Name=Generalisatie;FQName=MIM::Generalisatie;@ENDSTEREO;$DES;$CLT={13863E32-8106-4aa3-9D73-D12225B2849C}$CLT;$SUP=&lt;none&gt;$SUP;$ENDXREF;"/>
 				<tags>
-					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_B5CE_50357B2F37BB" name="Datum opname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
+					<tag xmi:id="EAID_FB3F1EDB_45C3_1445_B5CE_50357B2F37BB" name="DatumOpname" notes="Description: De datum waarop het modelelement is opgenomen in het informatiemodel.&#xA;"/>
 				</tags>
 			</connector>
 		</connectors>
@@ -1046,13 +1046,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Supplier-name" name="Supplier-name">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Supplier-project" name="Supplier-project">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Web locatie" name="Web locatie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Web locatie" name="WebLocatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Supplier-release" name="Supplier-release">
@@ -1070,10 +1070,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Versie ID" name="Versie ID">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Toepassing-Versie ID" name="VersieID">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1087,7 +1087,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Supplier-name" name="Supplier-name">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Supplier-project" name="Supplier-project">
@@ -1096,7 +1096,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Niveau" name="Niveau">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Web locatie" name="Web locatie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Web locatie" name="WebLocatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Supplier-release" name="Supplier-release">
@@ -1114,10 +1114,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Versie ID" name="Versie ID">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Basismodel-Versie ID" name="VersieID">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1171,13 +1171,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Ref-version" name="Ref-version">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Web locatie" name="Web locatie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Web locatie" name="WebLocatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Definitie" name="Definitie">
@@ -1198,10 +1198,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Versie ID" name="Versie ID">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="extern-Versie ID" name="VersieID">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1218,7 +1218,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1229,22 +1229,22 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-base_AssociationEnd" name="base_AssociationEnd" association="AssociationEnd_Relatierol">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#AssociationEnd"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Authentiek" name="Authentiek">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Herkomst" name="Herkomst">
@@ -1253,10 +1253,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Toelichting" name="Toelichting">
@@ -1276,10 +1276,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1293,16 +1293,16 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Voorbeeld" name="Voorbeeld">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Authentiek" name="Authentiek">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Regels" name="Regels">
@@ -1311,10 +1311,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Reden geen waarde" name="Reden geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Reden geen waarde" name="RedenGeenwaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Herkomst" name="Herkomst">
@@ -1323,16 +1323,16 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1343,10 +1343,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-base_Attribute" name="base_Attribute" association="Attribute_Gegevensgroep">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Authentiek" name="Authentiek">
@@ -1355,7 +1355,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Herkomst" name="Herkomst">
@@ -1364,10 +1364,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Toelichting" name="Toelichting">
@@ -1389,10 +1389,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-base_Package" name="base_Package" association="Package_Intern">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Package"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Interne naam" name="Interne naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Interne naam" name="InterneNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Positie" name="Positie">
@@ -1404,16 +1404,16 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Release" name="Release">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Interne release" name="Interne release">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Interne release" name="InterneRelease">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Intern project" name="Intern project">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Intern project" name="InternProject">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Intern-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1443,7 +1443,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Eigenaar" name="Eigenaar">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Herkomst" name="Herkomst">
@@ -1458,7 +1458,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Toegankelijkheid" name="Toegankelijkheid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Meervoudige Relatieklasse-Gebruiksvoorwaarden" name="Gebruiksvoorwaarden">
@@ -1468,7 +1468,7 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Meervoudige Relatieklasse" name="A_Class_Meervoudige Relatieklasse" memberEnd="extension_Meervoudige Relatieklasse Meervoudige Relatieklasse-base_Class">
 					<ownedEnd xmi:id="extension_Meervoudige Relatieklasse" name="extension_Meervoudige Relatieklasse" type="Meervoudige Relatieklasse" isComposite="true" lower="0" upper="1" memberEnd="extension_Meervoudige Relatieklasse Meervoudige Relatieklasse-base_Class"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Keuze element" name="Keuze element">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Keuze element" name="KeuzeElement">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze element-base_Attribute" name="base_Attribute" association="Attribute_Keuze element">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
@@ -1484,13 +1484,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze element-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze element-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze element-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze element-Patroon" name="Patroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze element-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze element-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1523,13 +1523,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Eigenaar" name="Eigenaar">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Herkomst" name="Herkomst">
@@ -1550,13 +1550,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Toegankelijkheid" name="Toegankelijkheid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Gebruiksvoorwaarden" name="Gebruiksvoorwaarden">
@@ -1569,7 +1569,7 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Objecttype" name="A_Class_Objecttype" memberEnd="extension_Objecttype Objecttype-base_Class">
 					<ownedEnd xmi:id="extension_Objecttype" name="extension_Objecttype" type="Objecttype" isComposite="true" lower="0" upper="1" memberEnd="extension_Objecttype Objecttype-base_Class"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Referentie element" name="Referentie element">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Referentie element" name="ReferentieElement">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-base_Attribute" name="base_Attribute" association="Attribute_Referentie element">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
@@ -1579,7 +1579,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Lengte" name="Lengte">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Positie" name="Positie">
@@ -1591,7 +1591,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Patroon" name="Patroon">
@@ -1600,7 +1600,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1627,7 +1627,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-base_DataType" name="base_DataType" association="DataType_Keuze">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#DataType"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Positie" name="Positie">
@@ -1639,21 +1639,21 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Keuze-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="DataType_Keuze" name="A_DataType_Keuze" memberEnd="extension_Keuze Keuze-base_DataType">
 					<ownedEnd xmi:id="extension_Keuze" name="extension_Keuze" type="Keuze" isComposite="true" lower="0" upper="1" memberEnd="extension_Keuze Keuze-base_DataType"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Data element" name="Data element">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Data element" name="DataElement">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-base_Attribute" name="base_Attribute" association="Attribute_Data element">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Lengte" name="Lengte">
@@ -1668,13 +1668,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Patroon" name="Patroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1688,7 +1688,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-base_Enumeration" name="base_Enumeration" association="Enumeration_Codelijst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Enumeration"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Herkomst" name="Herkomst">
@@ -1700,7 +1700,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Locatie" name="Locatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Toelichting" name="Toelichting">
@@ -1731,13 +1731,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Eigenaar" name="Eigenaar">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Regels" name="Regels">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Herkomst" name="Herkomst">
@@ -1746,27 +1746,27 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Gegevensgroeptype" name="A_Class_Gegevensgroeptype" memberEnd="extension_Gegevensgroeptype Gegevensgroeptype-base_Class">
 					<ownedEnd xmi:id="extension_Gegevensgroeptype" name="extension_Gegevensgroeptype" type="Gegevensgroeptype" isComposite="true" lower="0" upper="1" memberEnd="extension_Gegevensgroeptype Gegevensgroeptype-base_Class"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Externe koppeling" name="Externe koppeling">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Externe koppeling" name="ExterneKoppeling">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-base_Association" name="base_Association" association="Association_Externe koppeling">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Association"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1788,10 +1788,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Ref-version" name="Ref-version">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Web locatie" name="Web locatie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Web locatie" name="WebLocatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Definitie" name="Definitie">
@@ -1812,7 +1812,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Versie ID" name="Versie ID">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Versie ID" name="VersieID">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1851,7 +1851,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="voidable-base_Attribute" name="base_Attribute" association="Attribute_voidable">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="voidable-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="voidable-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1871,13 +1871,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Ref-version" name="Ref-version">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Web locatie" name="Web locatie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Web locatie" name="WebLocatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Definitie" name="Definitie">
@@ -1901,21 +1901,21 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Versie ID" name="Versie ID">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Versie ID" name="VersieID">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Domein" name="A_Package_Domein" memberEnd="extension_Domein Domein-base_Package">
 					<ownedEnd xmi:id="extension_Domein" name="extension_Domein" type="Domein" isComposite="true" lower="0" upper="1" memberEnd="extension_Domein Domein-base_Package"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Gestructureerd datatype" name="Gestructureerd datatype">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Gestructureerd datatype" name="GestructureerdDatatype">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-base_DataType" name="base_DataType" association="DataType_Gestructureerd datatype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#DataType"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Positie" name="Positie">
@@ -1927,7 +1927,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Wetgeving" name="Wetgeving">
@@ -1936,13 +1936,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Toegankelijkheid" name="Toegankelijkheid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Patroon" name="Patroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -1996,7 +1996,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Eigenaar" name="Eigenaar">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Herkomst" name="Herkomst">
@@ -2011,7 +2011,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Toegankelijkheid" name="Toegankelijkheid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Koppelklasse-Gebruiksvoorwaarden" name="Gebruiksvoorwaarden">
@@ -2021,7 +2021,7 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Koppelklasse" name="A_Class_Koppelklasse" memberEnd="extension_Koppelklasse Koppelklasse-base_Class">
 					<ownedEnd xmi:id="extension_Koppelklasse" name="extension_Koppelklasse" type="Koppelklasse" isComposite="true" lower="0" upper="1" memberEnd="extension_Koppelklasse Koppelklasse-base_Class"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Primitief datatype" name="Primitief datatype">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Primitief datatype" name="PrimitiefDatatype">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-base_DataType" name="base_DataType" association="DataType_Primitief datatype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#DataType"/>
 					</ownedAttribute>
@@ -2034,13 +2034,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Patroon" name="Patroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -2051,7 +2051,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Project-base_Package" name="base_Package" association="Package_Project">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Package"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Project-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Project-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Project-Definitie" name="Definitie">
@@ -2060,7 +2060,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Project-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Project-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Project-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -2082,13 +2082,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Ref-version" name="Ref-version">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Web locatie" name="Web locatie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Web locatie" name="WebLocatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Definitie" name="Definitie">
@@ -2109,10 +2109,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Versie ID" name="Versie ID">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Versie ID" name="VersieID">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -2134,10 +2134,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Voorbeeld" name="Voorbeeld">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Eigenaar" name="Eigenaar">
@@ -2149,7 +2149,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Lengte" name="Lengte">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Regels" name="Regels">
@@ -2158,10 +2158,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Reden geen waarde" name="Reden geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Reden geen waarde" name="RedenGeenwaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Herkomst" name="Herkomst">
@@ -2170,7 +2170,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Locatie" name="Locatie">
@@ -2179,13 +2179,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Wetgeving" name="Wetgeving">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Toegankelijkheid" name="Toegankelijkheid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Patroon" name="Patroon">
@@ -2194,7 +2194,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Gebruiksvoorwaarden" name="Gebruiksvoorwaarden">
@@ -2225,7 +2225,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-base_Enumeration" name="base_Enumeration" association="Enumeration_Enumeratie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Enumeration"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Positie" name="Positie">
@@ -2234,7 +2234,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Definitie" name="Definitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -2262,7 +2262,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Interface-Positie" name="Positie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Interface-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Interface-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -2287,7 +2287,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Voorbeeld" name="Voorbeeld">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Alternatieve naam" name="Alternatieve naam">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Alternatieve naam" name="AlternatieveNaam">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Positie" name="Positie">
@@ -2302,13 +2302,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Locatie" name="Locatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Toelichting" name="Toelichting">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Is afgeleid" name="Is afgeleid">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Is afgeleid" name="IsAfgeleid">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -2331,7 +2331,7 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Folder" name="A_Package_Folder" memberEnd="extension_Folder Folder-base_Package">
 					<ownedEnd xmi:id="extension_Folder" name="extension_Folder" type="Folder" isComposite="true" lower="0" upper="1" memberEnd="extension_Folder Folder-base_Package"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Static liskov" name="Static liskov">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Static liskov" name="StaticLiskov">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Static liskov-base_Generalization" name="base_Generalization" association="Generalization_Static liskov">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Generalization"/>
 					</ownedAttribute>
@@ -2511,7 +2511,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-base_Attribute" name="base_Attribute" association="Attribute_Enumeratiewaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Herkomst" name="Herkomst">
@@ -2520,7 +2520,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratiewaarde-Toelichting" name="Toelichting">
@@ -2534,28 +2534,28 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-base_Property" name="base_Property" association="Property_Relatierol">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Property"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Authentiek" name="Authentiek">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Herkomst" name="Herkomst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Herkomst defintie" name="Herkomst defintie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Herkomst defintie" name="HerkomstDefintie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatierol-Toelichting" name="Toelichting">
@@ -2569,16 +2569,16 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-base_AssociationClass" name="base_AssociationClass" association="AssociationClass_Relatieklasse">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#AssociationClass"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Authentiek" name="Authentiek">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Herkomst" name="Herkomst">
@@ -2587,10 +2587,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatieklasse-Toelichting" name="Toelichting">
@@ -2604,16 +2604,16 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-base_Association" name="base_Association" association="Association_Relatiesoort">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Association"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Authentiek" name="Authentiek">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Herkomst" name="Herkomst">
@@ -2622,10 +2622,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Relatiesoort-Toelichting" name="Toelichting">
@@ -2642,10 +2642,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Authentiek" name="Authentiek">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Herkomst" name="Herkomst">
@@ -2654,10 +2654,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroep-Toelichting" name="Toelichting">
@@ -2671,7 +2671,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-base_Class" name="base_Class" association="Class_Objecttype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Class"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Herkomst" name="Herkomst">
@@ -2683,7 +2683,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Objecttype-Toelichting" name="Toelichting">
@@ -2696,26 +2696,26 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Objecttype" name="A_Class_Objecttype" memberEnd="extension_Objecttype Objecttype-base_Class">
 					<ownedEnd xmi:id="extension_Objecttype" name="extension_Objecttype" type="Objecttype" isComposite="true" lower="0" upper="1" memberEnd="extension_Objecttype Objecttype-base_Class"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Referentie element" name="Referentie element">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Referentie element" name="ReferentieElement">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-base_Attribute" name="base_Attribute" association="Attribute_Referentie element">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Lengte" name="Lengte">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Herkomst" name="Herkomst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentie element-Patroon" name="Patroon">
@@ -2728,26 +2728,26 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Attribute_Referentie element" name="A_Attribute_Referentie element" memberEnd="extension_Referentie element Referentie element-base_Attribute">
 					<ownedEnd xmi:id="extension_Referentie element" name="extension_Referentie element" type="Referentie element" isComposite="true" lower="0" upper="1" memberEnd="extension_Referentie element Referentie element-base_Attribute"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Data element" name="Data element">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Data element" name="DataElement">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-base_Attribute" name="base_Attribute" association="Attribute_Data element">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Lengte" name="Lengte">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Herkomst" name="Herkomst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Data element-Patroon" name="Patroon">
@@ -2764,7 +2764,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-base_DataType" name="base_DataType" association="DataType_Codelijst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#DataType"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Herkomst" name="Herkomst">
@@ -2776,7 +2776,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Codelijst-Toelichting" name="Toelichting">
@@ -2790,7 +2790,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Generalisatie-base_Generalization" name="base_Generalization" association="Generalization_Generalisatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Generalization"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Generalisatie-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Generalisatie-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 				</packagedElement>
@@ -2801,7 +2801,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-base_Class" name="base_Class" association="Class_Gegevensgroeptype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Class"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Herkomst" name="Herkomst">
@@ -2810,7 +2810,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gegevensgroeptype-Toelichting" name="Toelichting">
@@ -2820,20 +2820,20 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Class_Gegevensgroeptype" name="A_Class_Gegevensgroeptype" memberEnd="extension_Gegevensgroeptype Gegevensgroeptype-base_Class">
 					<ownedEnd xmi:id="extension_Gegevensgroeptype" name="extension_Gegevensgroeptype" type="Gegevensgroeptype" isComposite="true" lower="0" upper="1" memberEnd="extension_Gegevensgroeptype Gegevensgroeptype-base_Class"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Externe koppeling" name="Externe koppeling">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Externe koppeling" name="ExterneKoppeling">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-base_Association" name="base_Association" association="Association_Externe koppeling">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Association"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Authentiek" name="Authentiek">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Herkomst" name="Herkomst">
@@ -2842,10 +2842,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Externe koppeling-Toelichting" name="Toelichting">
@@ -2859,7 +2859,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="View-base_Package" name="base_Package" association="Package_View">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Package"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Herkomst" name="Herkomst">
@@ -2868,7 +2868,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Locatie" name="Locatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="View-Toelichting" name="Toelichting">
@@ -2882,13 +2882,13 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-base_Package" name="base_Package" association="Package_Domein">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Package"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Herkomst" name="Herkomst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Domein-Toelichting" name="Toelichting">
@@ -2898,23 +2898,23 @@
 				<packagedElement xmi:type="uml:Extension" xmi:id="Package_Domein" name="A_Package_Domein" memberEnd="extension_Domein Domein-base_Package">
 					<ownedEnd xmi:id="extension_Domein" name="extension_Domein" type="Domein" isComposite="true" lower="0" upper="1" memberEnd="extension_Domein Domein-base_Package"/>
 				</packagedElement>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Gestructureerd datatype" name="Gestructureerd datatype">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Gestructureerd datatype" name="GestructureerdDatatype">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-base_DataType" name="base_DataType" association="DataType_Gestructureerd datatype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#DataType"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Herkomst" name="Herkomst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Gestructureerd datatype-Patroon" name="Patroon">
@@ -2931,16 +2931,16 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-base_Package" name="base_Package" association="Package_Informatiemodel">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Package"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-MIM extensie" name="MIM extensie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-MIM extensie" name="MIM-extensie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Relatiemodelleringstype" name="Relatiemodelleringstype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-MIM versie" name="MIM versie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-MIM versie" name="MIM-versie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Herkomst" name="Herkomst">
@@ -2949,10 +2949,10 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Informatiemodeltype" name="Informatiemodeltype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-MIM taal" name="MIM taal">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-MIM taal" name="MIM-taal">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Informatiemodel-Toelichting" name="Toelichting">
@@ -2966,26 +2966,26 @@
 					<ownedEnd xmi:id="extension_Informatiemodel" name="extension_Informatiemodel" type="Informatiemodel" isComposite="true" lower="0" upper="1" memberEnd="extension_Informatiemodel Informatiemodel-base_Package"/>
 				</packagedElement>
 				<packagedElement xmi:type="uml:Stereotype" xmi:id="Keuzerelatie" name="Keuzerelatie"/>
-				<packagedElement xmi:type="uml:Stereotype" xmi:id="Primitief datatype" name="Primitief datatype">
+				<packagedElement xmi:type="uml:Stereotype" xmi:id="Primitief datatype" name="PrimitiefDatatype">
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-base_PrimitiveType" name="base_PrimitiveType" association="PrimitiveType_Primitief datatype">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#PrimitiveType"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Lengte" name="Lengte">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Herkomst" name="Herkomst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Primitief datatype-Patroon" name="Patroon">
@@ -3002,7 +3002,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-base_Package" name="base_Package" association="Package_Extern">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Package"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Herkomst" name="Herkomst">
@@ -3011,7 +3011,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Locatie" name="Locatie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Extern-Toelichting" name="Toelichting">
@@ -3025,7 +3025,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-base_Attribute" name="base_Attribute" association="Attribute_Attribuutsoort">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Attribute"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Mogelijk geen waarde" name="Mogelijk geen waarde">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Mogelijk geen waarde" name="MogelijkGeenWaarde">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Authentiek" name="Authentiek">
@@ -3034,28 +3034,28 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Lengte" name="Lengte">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie classificerend" name="Indicatie classificerend">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie classificerend" name="IndicatieClassificerend">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie materi�le historie" name="Indicatie materi�le historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie materi�le historie" name="IndicatieMaterileHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Herkomst" name="Herkomst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Formeel patroon" name="Formeel patroon">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Formeel patroon" name="FormeelPatroon">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie formele historie" name="Indicatie formele historie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Indicatie formele historie" name="IndicatieFormeleHistorie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Attribuutsoort-Patroon" name="Patroon">
@@ -3072,7 +3072,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-base_Enumeration" name="base_Enumeration" association="Enumeration_Enumeratie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#Enumeration"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Herkomst" name="Herkomst">
@@ -3081,7 +3081,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Enumeratie-Toelichting" name="Toelichting">
@@ -3095,7 +3095,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-base_DataType" name="base_DataType" association="DataType_Referentielijst">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#DataType"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Herkomst definitie" name="Herkomst definitie">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Herkomst definitie" name="HerkomstDefinitie">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Herkomst" name="Herkomst">
@@ -3107,7 +3107,7 @@
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Begrip" name="Begrip">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
-					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Datum opname" name="Datum opname">
+					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Datum opname" name="DatumOpname">
 						<type href="http://www.omg.org/spec/UML/20161101/UML.xmi#String"/>
 					</ownedAttribute>
 					<ownedAttribute xmi:type="uml:Property" xmi:id="Referentielijst-Toelichting" name="Toelichting">

@@ -734,7 +734,7 @@
 				</source>
 				<target xmi:idref="EAID_1FBB7B14_F45B_4d9b_96F3_1CCC5BB5EE16">
 					<model ea_localid="317" type="Class" name="Begrip"/>
-					<role visibility="Public" targetScope="instance"/>
+					<role name="thema" visibility="Public" targetScope="instance"/>
 					<type multiplicity="1..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>
@@ -816,7 +816,7 @@
 				</source>
 				<target xmi:idref="EAID_CB6395CA_0336_465e_B15B_AA7C8720EC0B">
 					<model ea_localid="336" type="Class" name="Standaard"/>
-					<role visibility="Public" targetScope="instance"/>
+					<role name="conformeertAan" visibility="Public" targetScope="instance"/>
 					<type multiplicity="0..*" aggregation="none" containment="Unspecified"/>
 					<constraints/>
 					<modifiers isOrdered="false" changeable="none" isNavigable="true"/>

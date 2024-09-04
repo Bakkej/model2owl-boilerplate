@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://modellen.kadaster.nl/brt/imbrt/ontology#"
+         xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:at-voc="http://publications.europa.eu/resource/authority/"
+         xmlns:at-voc-new="http://publications.europa.eu/resource/authority/new/"
+         xmlns:cccev="http://data.europa.eu/m8g/"
+         xmlns:core="http://data.europa.eu/m8g/"
+         xmlns:core-res="http://data.europa.eu/a4g/ontology#"
+         xmlns:core-shape="http://data.europa.eu/a4g/data-shape#"
+         xmlns:cpov="http://data.europa.eu/m8g/"
+         xmlns:cpsv="http://data.europa.eu/m8g/"
+         xmlns:cpv="http://data.europa.eu/m8g/"
+         xmlns:cv="http://data.europa.eu/m8g/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+         xmlns:epo="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-cat="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-con="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-ful="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-not="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-ord="http://data.europa.eu/a4g/ontology#"
+         xmlns:espd="https://github.com/ESPD/ESPD-EDM/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+         xmlns:locn="http://www.w3.org/ns/locn#"
+         xmlns:nuts="http://data.europa.eu/nuts/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:person="http://www.w3.org/ns/person#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:sh="http://www.w3.org/ns/shacl#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:time="http://www.w3.org/2006/time#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+   <owl:Ontology rdf:about="http://data.europa.eu/a4g/data-shape#core-shape">
+      <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+      <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+      <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+      <owl:imports rdf:resource="http://data.europa.eu/nuts"/>
+      <owl:imports rdf:resource="http://publications.europa.eu/resource/authority/"/>
+      <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/locn"/>
+      <owl:imports rdf:resource="https://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="https://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/person"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/adms"/>
+      <owl:imports rdf:resource="http://data.europa.eu/a4g/ontology#core"/>
+      <owl:imports rdf:resource="http://data.europa.eu/a4g/ontology#core-restriction"/>
+      <dct:title xml:lang="en">eProcurement Ontology - core shapes</dct:title>
+      <rdfs:label xml:lang="en">eProcurement Ontology Ordering - core shapes</rdfs:label>
+      <dct:publisher>http://publications.europa.eu/resource/authority/corporate-body/PUBL</dct:publisher>
+      <dct:description xml:lang="en">The eProcurement Ontology core shapes provides the generic datashape specifications for the eProcurement Ontology core.</dct:description>
+      <rdfs:comment>This version is automatically generated from IMRDD_CM.xml on 2024-09-04</rdfs:comment>
+      <rdfs:seeAlso rdf:resource="https://github.com/OP-TED/ePO/releases"/>
+      <rdfs:seeAlso rdf:resource="https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about"/>
+      <rdfs:seeAlso rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/e-procurement"/>
+      <rdfs:seeAlso rdf:resource="https://docs.ted.europa.eu/home/index.html"/>
+      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-04</dct:issued>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</dct:created>
+      <owl:versionInfo>4.0.0</owl:versionInfo>
+      <owl:incompatibleWith>3.1.0</owl:incompatibleWith>
+      <owl:versionIRI rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape-4.0.0"/>
+      <owl:priorVersion>http://data.europa.eu/a4g/data-shape#core-shape-3.1.0</owl:priorVersion>
+      <vann:preferredNamespaceUri>http://data.europa.eu/a4g/ontology#</vann:preferredNamespaceUri>
+      <vann:preferredNamespacePrefix>epo</vann:preferredNamespacePrefix>
+      <dct:license>© European Union, 2014. Unless otherwise noted, the reuse of the Ontology is authorised under the European Union Public Licence v1.2 (https://eupl.eu/).</dct:license>
+   </owl:Ontology>
+   <sh:NodeShape rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <sh:targetClass rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip"/>
+   </sh:NodeShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <rdfs:label>Begrip</rdfs:label>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <rdfs:comment>--definitie-- Een begrip is een eenheid van denken - idee, betekenis of categorisering.</rdfs:comment>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <sh:NodeShape rdf:about="http://data.europa.eu/a4g/data-shape#Dataset">
+      <sh:targetClass rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset"/>
+   </sh:NodeShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset">
+      <rdfs:label>Dataset</rdfs:label>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset">
+      <rdfs:comment>--definitie-- Een dataset is een zinvolle verzameling van samenhangende gegevens, die beheerd of gepubliceerd wordt door &amp;#233;&amp;#233;n organisatie, en in &amp;#233;&amp;#233;n of meer formaten beschikbaar of downloadbaar is.</rdfs:comment>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <sh:NodeShape rdf:about="http://data.europa.eu/a4g/data-shape#Informatiemodel">
+      <sh:targetClass rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel"/>
+   </sh:NodeShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Informatiemodel">
+      <rdfs:label>Informatiemodel</rdfs:label>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Informatiemodel">
+      <rdfs:comment>--definitie-- Formele beschijving van de concepten van een beschouwingsgebied. --toelichting-- Beschrijving van de structuur en betekenis van de informatieobjecten in een bepaald domein.</rdfs:comment>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Informatiemodel">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <sh:NodeShape rdf:about="http://data.europa.eu/a4g/data-shape#Notitie">
+      <sh:targetClass rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie"/>
+   </sh:NodeShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Notitie">
+      <rdfs:label>Notitie</rdfs:label>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Notitie">
+      <rdfs:comment>--Definitie-- een notitie is een specificatie die niet bedoelt is als formele standaard.</rdfs:comment>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Notitie">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <sh:NodeShape rdf:about="http://data.europa.eu/a4g/data-shape#Resource">
+      <sh:targetClass rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource"/>
+   </sh:NodeShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Resource">
+      <rdfs:label>Resource</rdfs:label>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Resource">
+      <rdfs:comment>--definitie-- Iets wat beschreven kan worden.</rdfs:comment>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Resource">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <sh:NodeShape rdf:about="http://data.europa.eu/a4g/data-shape#Specificatie">
+      <sh:targetClass rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie"/>
+   </sh:NodeShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Specificatie">
+      <rdfs:label>Specificatie</rdfs:label>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Specificatie">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <sh:NodeShape rdf:about="http://data.europa.eu/a4g/data-shape#Standaard">
+      <sh:targetClass rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard"/>
+   </sh:NodeShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard">
+      <rdfs:label>Standaard</rdfs:label>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard">
+      <rdfs:comment>--definitie-- A reference point against which other things can be evaluated or compared.</rdfs:comment>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Begrip-voorkeursterm"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-voorkeursterm">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-voorkeursterm">
+      <sh:name>Voorkeursterm</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-voorkeursterm">
+      <sh:description>--definitie-- Een voorkeursterm is een naam die in een specifieke taal de geprefereerde lexicale naam is. --toelichting-- De term om een begrip weer te geven, kan bestaan uit &amp;#233;&amp;#233;n of meerdere woorden. In het gewone spraakgebruik kan een enkele term meer dan &amp;#233;&amp;#233;n betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in het begrippenkader gezochte begrip weer te geven. Indien de context die wordt geboden door de hi&amp;#235;rarchie van bovenliggende en onderliggende begrippen gekoppeld aan het betreffende begrip onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle termen in een begrippenkader zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term "depressie" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als "economische depressie" of "meteorologische depressie", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete toelichting worden gebruikt.</sh:description>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-voorkeursterm">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-voorkeursterm">
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Begrip-alternatieveTerm"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-alternatieveTerm">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-alternatieveTerm">
+      <sh:name>Alternatieve term</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-alternatieveTerm">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Begrip-uitleg"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-uitleg">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-uitleg">
+      <sh:name>Uitleg</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-uitleg">
+      <sh:description>--definitie-- Een uitleg is een beschrijving van iets in eenvoudige taal, op taalniveau B1, die zonder verdere context begrepen kan worden.</sh:description>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-uitleg">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Begrip-definitie"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-definitie">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-definitie">
+      <sh:name>Definitie</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-definitie">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Begrip-definitie">
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Resource">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Resource-titel"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Resource-titel">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#titel"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Resource-titel">
+      <sh:name>Titel</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Resource-titel">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Resource-titel">
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Standaard-formeleStatus"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Standaard-formeleStatus">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard-formeleStatus">
+      <sh:name>Formele status</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard-formeleStatus">
+      <sh:description>--definitie-- Aanduiding van de mate van verplichtheid van de standaard binnen het toepassingsgebied.</sh:description>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard-formeleStatus">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/a4g/data-shape#core-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Standaard-formeleStatus">
+      <sh:maxCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:maxCount>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-thema">
+      <sh:class rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-thema">
+      <sh:minCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</sh:minCount>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-thema">
+      <sh:sparql rdf:parseType="Resource">
+         <sh:select>SELECT ?this ?that WHERE { ?this &lt;http://modellen.kadaster.nl/brt/imbrt/ontology#thema&gt; ?that . ?that &lt;http://modellen.kadaster.nl/brt/imbrt/ontology#thema&gt; ?this .}</sh:select>
+      </sh:sparql>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Dataset-thema"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-thema">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#thema"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-thema">
+      <sh:name>Thema</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-thema">
+      <sh:description>--definitie-- Thema van de dataset</sh:description>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-conformeertAan">
+      <sh:class rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-conformeertAan">
+      <sh:sparql rdf:parseType="Resource">
+         <sh:select>SELECT ?this ?that WHERE { ?this &lt;http://modellen.kadaster.nl/brt/imbrt/ontology#conformeertAan&gt; ?that . ?that &lt;http://modellen.kadaster.nl/brt/imbrt/ontology#conformeertAan&gt; ?this .}</sh:select>
+      </sh:sparql>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset">
+      <sh:property rdf:resource="http://data.europa.eu/a4g/data-shape#Dataset-conformeertAan"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-conformeertAan">
+      <sh:path rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#conformeertAan"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-conformeertAan">
+      <sh:name>Conformeert aan</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/a4g/data-shape#Dataset-conformeertAan">
+      <sh:description>--definitie-- Een standaard waar de dataset aan voldoet.</sh:description>
+   </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns="http://modellen.kadaster.nl/brt/imbrt/ontology#"
+         xmlns:adms="http://www.w3.org/ns/adms#"
+         xmlns:at-voc="http://publications.europa.eu/resource/authority/"
+         xmlns:at-voc-new="http://publications.europa.eu/resource/authority/new/"
+         xmlns:cccev="http://data.europa.eu/m8g/"
+         xmlns:core="http://data.europa.eu/m8g/"
+         xmlns:cpov="http://data.europa.eu/m8g/"
+         xmlns:cpsv="http://data.europa.eu/m8g/"
+         xmlns:cpv="http://data.europa.eu/m8g/"
+         xmlns:cv="http://data.europa.eu/m8g/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:dct="http://purl.org/dc/terms/"
+         xmlns:dul="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+         xmlns:epo="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-cat="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-con="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-ful="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-not="http://data.europa.eu/a4g/ontology#"
+         xmlns:epo-ord="http://data.europa.eu/a4g/ontology#"
+         xmlns:espd="https://github.com/ESPD/ESPD-EDM/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+         xmlns:locn="http://www.w3.org/ns/locn#"
+         xmlns:nuts="http://data.europa.eu/nuts/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:person="http://www.w3.org/ns/person#"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:time="http://www.w3.org/2006/time#"
+         xmlns:vann="http://purl.org/vocab/vann/"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+   <owl:Ontology rdf:about="http://data.europa.eu/a4g/ontology#core">
+      <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+      <owl:imports rdf:resource="http://purl.org/dc/terms/"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+      <owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+      <owl:imports rdf:resource="http://data.europa.eu/nuts"/>
+      <owl:imports rdf:resource="http://publications.europa.eu/resource/authority/"/>
+      <owl:imports rdf:resource="http://www.w3.org/2006/time"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/locn"/>
+      <owl:imports rdf:resource="https://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="https://data.europa.eu/m8g/"/>
+      <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/person"/>
+      <owl:imports rdf:resource="http://www.w3.org/ns/adms"/>
+      <dct:title xml:lang="en">eProcurement Ontology - core</dct:title>
+      <rdfs:label xml:lang="en">eProcurement Ontology Ordering - core</rdfs:label>
+      <dct:description xml:lang="en">The eProcurement Ontology core describes the concepts and properties representing the European Public Procurement domain. The provision of these semantics offers the basis for a common understanding of the domain for all stakeholders ensuring the quality of data exchange and transparency. The ontology restrictions are published in a separate artefact.</dct:description>
+      <dct:publisher>http://publications.europa.eu/resource/authority/corporate-body/PUBL</dct:publisher>
+      <rdfs:comment>This version is automatically generated from IMRDD_CM.xml on 2024-09-04</rdfs:comment>
+      <rdfs:seeAlso rdf:resource="https://github.com/OP-TED/ePO/releases"/>
+      <rdfs:seeAlso rdf:resource="https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about"/>
+      <rdfs:seeAlso rdf:resource="https://op.europa.eu/en/web/eu-vocabularies/e-procurement"/>
+      <rdfs:seeAlso rdf:resource="https://docs.ted.europa.eu/home/index.html"/>
+      <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-09-04</dct:issued>
+      <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2021-06-01</dct:created>
+      <owl:versionInfo>4.0.0</owl:versionInfo>
+      <owl:incompatibleWith>3.1.0</owl:incompatibleWith>
+      <owl:versionIRI rdf:resource="http://data.europa.eu/a4g/ontology#core-4.0.0"/>
+      <owl:priorVersion>http://data.europa.eu/a4g/ontology#core-3.1.0</owl:priorVersion>
+      <vann:preferredNamespaceUri>http://data.europa.eu/a4g/ontology#</vann:preferredNamespaceUri>
+      <vann:preferredNamespacePrefix>epo</vann:preferredNamespacePrefix>
+      <dct:license>© European Union, 2014. Unless otherwise noted, the reuse of the Ontology is authorised under the European Union Public Licence v1.2 (https://eupl.eu/).</dct:license>
+   </owl:Ontology>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <skos:prefLabel xml:lang="en">Begrip</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <skos:definition xml:lang="en">--definitie-- Een begrip is een eenheid van denken - idee, betekenis of categorisering.</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <DatumOpname xmlns="" xml:lang="en">25-01-2024#NOTES#Default: &lt;date&gt;
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <IndicatieAbstractObject xmlns="" xml:lang="en">#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+</IndicatieAbstractObject>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <Kwaliteit xmlns="" xml:lang="en">#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+</Kwaliteit>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <Populatie xmlns="" xml:lang="en">&lt;memo&gt;</Populatie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <UniekeAanduiding xmlns="" xml:lang="en">#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+</UniekeAanduiding>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Begrip">
+      <uri xmlns="" xml:lang="en">http://www.w3.org/2004/02/skos/core#Concept</uri>
+   </rdf:Description>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <skos:prefLabel xml:lang="en">Dataset</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <skos:definition xml:lang="en">--definitie-- Een dataset is een zinvolle verzameling van samenhangende gegevens, die beheerd of gepubliceerd wordt door &amp;#233;&amp;#233;n organisatie, en in &amp;#233;&amp;#233;n of meer formaten beschikbaar of downloadbaar is.</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <DatumOpname xmlns="" xml:lang="en">&lt;date&gt;#NOTES#Default: &lt;date&gt;
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <IndicatieAbstractObject xmlns="" xml:lang="en">#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+</IndicatieAbstractObject>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <Kwaliteit xmlns="" xml:lang="en">#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+</Kwaliteit>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <Populatie xmlns="" xml:lang="en">&lt;memo&gt;</Populatie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <UniekeAanduiding xmlns="" xml:lang="en">#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+</UniekeAanduiding>
+   </rdf:Description>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <skos:prefLabel xml:lang="en">Informatiemodel</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <skos:definition xml:lang="en">--definitie-- Formele beschijving van de concepten van een beschouwingsgebied. --toelichting-- Beschrijving van de structuur en betekenis van de informatieobjecten in een bepaald domein.</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <DatumOpname xmlns="" xml:lang="en">&lt;date&gt;#NOTES#Default: &lt;date&gt;
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <IndicatieAbstractObject xmlns="" xml:lang="en">#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+</IndicatieAbstractObject>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <Kwaliteit xmlns="" xml:lang="en">#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+</Kwaliteit>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <Populatie xmlns="" xml:lang="en">&lt;memo&gt;</Populatie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <UniekeAanduiding xmlns="" xml:lang="en">#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+</UniekeAanduiding>
+   </rdf:Description>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <skos:prefLabel xml:lang="en">Notitie</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <skos:definition xml:lang="en">--Definitie-- een notitie is een specificatie die niet bedoelt is als formele standaard.</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <DatumOpname xmlns="" xml:lang="en">&lt;date&gt;#NOTES#Default: &lt;date&gt;
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <IndicatieAbstractObject xmlns="" xml:lang="en">#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+</IndicatieAbstractObject>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <Kwaliteit xmlns="" xml:lang="en">#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+</Kwaliteit>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <Populatie xmlns="" xml:lang="en">&lt;memo&gt;</Populatie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <UniekeAanduiding xmlns="" xml:lang="en">#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+</UniekeAanduiding>
+   </rdf:Description>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <skos:prefLabel xml:lang="en">Resource</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <skos:definition xml:lang="en">--definitie-- Iets wat beschreven kan worden.</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <DatumOpname xmlns="" xml:lang="en">&lt;date&gt;#NOTES#Default: &lt;date&gt;
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <IndicatieAbstractObject xmlns="" xml:lang="en">#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+</IndicatieAbstractObject>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <Kwaliteit xmlns="" xml:lang="en">#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+</Kwaliteit>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <Populatie xmlns="" xml:lang="en">&lt;memo&gt;</Populatie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource">
+      <UniekeAanduiding xmlns="" xml:lang="en">#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+</UniekeAanduiding>
+   </rdf:Description>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <skos:prefLabel xml:lang="en">Specificatie</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <DatumOpname xmlns="" xml:lang="en">&lt;date&gt;#NOTES#Default: &lt;date&gt;
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <IndicatieAbstractObject xmlns="" xml:lang="en">#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+</IndicatieAbstractObject>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <Kwaliteit xmlns="" xml:lang="en">#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+</Kwaliteit>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <Populatie xmlns="" xml:lang="en">&lt;memo&gt;</Populatie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <UniekeAanduiding xmlns="" xml:lang="en">#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+</UniekeAanduiding>
+   </rdf:Description>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <skos:prefLabel xml:lang="en">Standaard</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <skos:definition xml:lang="en">--definitie-- A reference point against which other things can be evaluated or compared.</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <DatumOpname xmlns="" xml:lang="en">&lt;date&gt;#NOTES#Default: &lt;date&gt;
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <IndicatieAbstractObject xmlns="" xml:lang="en">#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+</IndicatieAbstractObject>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <Kwaliteit xmlns="" xml:lang="en">#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+</Kwaliteit>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <Populatie xmlns="" xml:lang="en">&lt;memo&gt;</Populatie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <UniekeAanduiding xmlns="" xml:lang="en">#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+</UniekeAanduiding>
+   </rdf:Description>
+   <skos:ConceptScheme rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#StandaardStatus"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#StandaardStatus">
+      <skos:prefLabel xml:lang="en">Standaard status</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#StandaardStatus">
+      <Begrip xmlns="" xml:lang="en">#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+</Begrip>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#StandaardStatus">
+      <DatumOpname xmlns="" xml:lang="en">#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#StandaardStatus">
+      <Herkomst xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+</Herkomst>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#StandaardStatus">
+      <HerkomstDefinitie xmlns="" xml:lang="en">#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+</HerkomstDefinitie>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#StandaardStatus">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;#NOTES#Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding.</Toelichting>
+   </rdf:Description>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset">
+      <rdfs:subClassOf rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Resource"/>
+   </owl:Class>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie">
+      <rdfs:subClassOf rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Dataset"/>
+   </owl:Class>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Informatiemodel">
+      <rdfs:subClassOf rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard"/>
+   </owl:Class>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Notitie">
+      <rdfs:subClassOf rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie"/>
+   </owl:Class>
+   <owl:Class rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#Standaard">
+      <rdfs:subClassOf rdf:resource="http://modellen.kadaster.nl/brt/imbrt/ontology#Specificatie"/>
+   </owl:Class>
+   <owl:ObjectProperty rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#thema"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#thema">
+      <skos:prefLabel xml:lang="en">Thema</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#thema">
+      <skos:definition xml:lang="en">--definitie-- Thema van de dataset (thema)</skos:definition>
+   </rdf:Description>
+   <owl:ObjectProperty rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#conformeertAan"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#conformeertAan">
+      <skos:prefLabel xml:lang="en">Conformeert aan</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#conformeertAan">
+      <skos:definition xml:lang="en">--definitie-- Een standaard waar de dataset aan voldoet. (conformeertAan)</skos:definition>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <skos:prefLabel xml:lang="en">Voorkeursterm</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <skos:definition xml:lang="en">--definitie-- Een voorkeursterm is een naam die in een specifieke taal de geprefereerde lexicale naam is. --toelichting-- De term om een begrip weer te geven, kan bestaan uit &amp;#233;&amp;#233;n of meerdere woorden. In het gewone spraakgebruik kan een enkele term meer dan &amp;#233;&amp;#233;n betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in het begrippenkader gezochte begrip weer te geven. Indien de context die wordt geboden door de hi&amp;#235;rarchie van bovenliggende en onderliggende begrippen gekoppeld aan het betreffende begrip onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle termen in een begrippenkader zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term "depressie" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als "economische depressie" of "meteorologische depressie", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete toelichting worden gebruikt. (Begrip)</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <Herkomst xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <Begrip xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <HerkomstDefinitie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <DatumOpname xmlns="" xml:lang="en">25-01-2024</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <Lengte xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <Patroon xmlns="" xml:lang="en">&lt;memo&gt;</Patroon>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <FormeelPatroon xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <IndicatieMaterileHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <IndicatieFormeleHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <Authentiek xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <IndicatieClassificerend xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <Mogelijkgeenwaarde xmlns="" xml:lang="en">Nee</Mogelijkgeenwaarde>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <uniqueLang xmlns="" xml:lang="en">true</uniqueLang>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#voorkeursterm">
+      <URI xmlns="" xml:lang="en">http://www.w3.org/2004/02/skos/core#prefLabel</URI>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <skos:prefLabel xml:lang="en">Alternatieve term</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <Herkomst xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <Begrip xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <HerkomstDefinitie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <DatumOpname xmlns="" xml:lang="en">25-01-2024</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <Lengte xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <Patroon xmlns="" xml:lang="en">&lt;memo&gt;</Patroon>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <FormeelPatroon xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <IndicatieMaterileHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <IndicatieFormeleHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <Authentiek xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <IndicatieClassificerend xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <MogelijkGeenWaarde xmlns="" xml:lang="en">Nee</MogelijkGeenWaarde>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#alternatieveTerm">
+      <URI xmlns="" xml:lang="en">http://www.w3.org/2004/02/skos/core#altLabel</URI>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <skos:prefLabel xml:lang="en">Uitleg</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <skos:definition xml:lang="en">--definitie-- Een uitleg is een beschrijving van iets in eenvoudige taal, op taalniveau B1, die zonder verdere context begrepen kan worden. (Begrip)</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <Herkomst xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <Begrip xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <HerkomstDefinitie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <DatumOpname xmlns="" xml:lang="en">25-01-2024</DatumOpname>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <Lengte xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <Patroon xmlns="" xml:lang="en">&lt;memo&gt;</Patroon>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <FormeelPatroon xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <IndicatieMaterileHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <IndicatieFormeleHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <Authentiek xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <IndicatieClassificerend xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <MogelijkGeenWaarde xmlns="" xml:lang="en">Nee</MogelijkGeenWaarde>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#uitleg">
+      <URI xmlns="" xml:lang="en">http://www.w3.org/2000/01/rdf-schema#comment</URI>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <skos:prefLabel xml:lang="en">Definitie</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <Herkomst xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <Begrip xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <HerkomstDefinitie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <DatumOpname xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <Lengte xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <Patroon xmlns="" xml:lang="en">&lt;memo&gt;</Patroon>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <FormeelPatroon xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <IndicatieMaterileHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <IndicatieFormeleHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <Authentiek xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <IndicatieClassificerend xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#definitie">
+      <MogelijkGeenWaarde xmlns="" xml:lang="en">Nee</MogelijkGeenWaarde>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <skos:prefLabel xml:lang="en">Titel</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <Herkomst xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <Begrip xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <HerkomstDefinitie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <DatumOpname xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <Lengte xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <Patroon xmlns="" xml:lang="en">&lt;memo&gt;</Patroon>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <FormeelPatroon xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <IndicatieMaterileHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <IndicatieFormeleHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <Authentiek xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <IndicatieClassificerend xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#titel">
+      <MogelijkGeenWaarde xmlns="" xml:lang="en">Nee</MogelijkGeenWaarde>
+   </rdf:Description>
+   <rdf:Property rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus"/>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <skos:prefLabel xml:lang="en">Formele status</skos:prefLabel>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <skos:definition xml:lang="en">--definitie-- Aanduiding van de mate van verplichtheid van de standaard binnen het toepassingsgebied. (Standaard)</skos:definition>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <Herkomst xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <Begrip xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <HerkomstDefinitie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <Toelichting xmlns="" xml:lang="en">&lt;memo&gt;</Toelichting>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <DatumOpname xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <Lengte xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <Patroon xmlns="" xml:lang="en">&lt;memo&gt;</Patroon>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <FormeelPatroon xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <IndicatieMaterileHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <IndicatieFormeleHistorie xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <Authentiek xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <IndicatieClassificerend xmlns="" xml:lang="en"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://modellen.kadaster.nl/brt/imbrt/ontology#formeleStatus">
+      <MogelijkGeenWaarde xmlns="" xml:lang="en">Nee</MogelijkGeenWaarde>
+   </rdf:Description>
+</rdf:RDF>

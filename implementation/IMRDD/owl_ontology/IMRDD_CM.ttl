@@ -1,0 +1,323 @@
+@prefix : <http://modellen.kadaster.nl/brt/imbrt/ontology#> .
+@prefix at-voc: <http://publications.europa.eu/resource/authority/> .
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix epo: <http://data.europa.eu/a4g/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <file:///home/runner/work/model2owl-boilerplate/model2owl-boilerplate/implementation/IMRDD/owl_ontology/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+epo:core a owl:Ontology ;
+    rdfs:label "eProcurement Ontology Ordering - core"@en ;
+    dcterms:created "2021-06-01"^^xsd:date ;
+    dcterms:description "The eProcurement Ontology core describes the concepts and properties representing the European Public Procurement domain. The provision of these semantics offers the basis for a common understanding of the domain for all stakeholders ensuring the quality of data exchange and transparency. The ontology restrictions are published in a separate artefact."@en ;
+    dcterms:issued "2024-09-04"^^xsd:date ;
+    dcterms:license "© European Union, 2014. Unless otherwise noted, the reuse of the Ontology is authorised under the European Union Public Licence v1.2 (https://eupl.eu/)." ;
+    dcterms:publisher "http://publications.europa.eu/resource/authority/corporate-body/PUBL" ;
+    dcterms:title "eProcurement Ontology - core"@en ;
+    vann:preferredNamespacePrefix "epo" ;
+    vann:preferredNamespaceUri "http://data.europa.eu/a4g/ontology#" ;
+    rdfs:comment "This version is automatically generated from IMRDD_CM.xml on 2024-09-04" ;
+    rdfs:seeAlso <https://docs.ted.europa.eu/home/index.html>,
+        <https://github.com/OP-TED/ePO/releases>,
+        <https://joinup.ec.europa.eu/collection/eprocurement/solution/eprocurement-ontology/about>,
+        <https://op.europa.eu/en/web/eu-vocabularies/e-procurement> ;
+    owl:imports cccev:,
+        <http://data.europa.eu/nuts>,
+        at-voc:,
+        dcterms:,
+        <http://www.opengis.net/ont/geosparql>,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        <https://data.europa.eu/m8g/> ;
+    owl:incompatibleWith "3.1.0" ;
+    owl:priorVersion "http://data.europa.eu/a4g/ontology#core-3.1.0" ;
+    owl:versionIRI epo:core-4.0.0 ;
+    owl:versionInfo "4.0.0" .
+
+:Begrip a owl:Class ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """25-01-2024#NOTES#Default: <date>
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:IndicatieAbstractObject """#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+"""@en ;
+    ns1:Kwaliteit """#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+"""@en ;
+    ns1:Populatie "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:UniekeAanduiding """#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+"""@en ;
+    ns1:uri "http://www.w3.org/2004/02/skos/core#Concept"@en ;
+    skos:definition "--definitie-- Een begrip is een eenheid van denken - idee, betekenis of categorisering."@en ;
+    skos:prefLabel "Begrip"@en .
+
+:Informatiemodel a owl:Class ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """<date>#NOTES#Default: <date>
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:IndicatieAbstractObject """#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+"""@en ;
+    ns1:Kwaliteit """#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+"""@en ;
+    ns1:Populatie "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:UniekeAanduiding """#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+"""@en ;
+    rdfs:subClassOf :Standaard ;
+    skos:definition "--definitie-- Formele beschijving van de concepten van een beschouwingsgebied. --toelichting-- Beschrijving van de structuur en betekenis van de informatieobjecten in een bepaald domein."@en ;
+    skos:prefLabel "Informatiemodel"@en .
+
+:Notitie a owl:Class ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """<date>#NOTES#Default: <date>
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:IndicatieAbstractObject """#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+"""@en ;
+    ns1:Kwaliteit """#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+"""@en ;
+    ns1:Populatie "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:UniekeAanduiding """#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+"""@en ;
+    rdfs:subClassOf :Specificatie ;
+    skos:definition "--Definitie-- een notitie is een specificatie die niet bedoelt is als formele standaard."@en ;
+    skos:prefLabel "Notitie"@en .
+
+:StandaardStatus a skos:ConceptScheme ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """#NOTES#Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:Toelichting "<memo>#NOTES#Een inhoudelijke toelichting op de definitie, ter verheldering of nadere duiding."@en ;
+    skos:prefLabel "Standaard status"@en .
+
+:alternatieveTerm a rdf:Property ;
+    ns1:Authentiek ""@en ;
+    ns1:Begrip ""@en ;
+    ns1:DatumOpname "25-01-2024"@en ;
+    ns1:FormeelPatroon ""@en ;
+    ns1:Herkomst ""@en ;
+    ns1:HerkomstDefinitie ""@en ;
+    ns1:IndicatieClassificerend ""@en ;
+    ns1:IndicatieFormeleHistorie ""@en ;
+    ns1:IndicatieMaterileHistorie ""@en ;
+    ns1:Lengte ""@en ;
+    ns1:MogelijkGeenWaarde "Nee"@en ;
+    ns1:Patroon "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:URI "http://www.w3.org/2004/02/skos/core#altLabel"@en ;
+    skos:prefLabel "Alternatieve term"@en .
+
+:conformeertAan a owl:ObjectProperty ;
+    skos:definition "--definitie-- Een standaard waar de dataset aan voldoet. (conformeertAan)"@en ;
+    skos:prefLabel "Conformeert aan"@en .
+
+:definitie a rdf:Property ;
+    ns1:Authentiek ""@en ;
+    ns1:Begrip ""@en ;
+    ns1:DatumOpname ""@en ;
+    ns1:FormeelPatroon ""@en ;
+    ns1:Herkomst ""@en ;
+    ns1:HerkomstDefinitie ""@en ;
+    ns1:IndicatieClassificerend ""@en ;
+    ns1:IndicatieFormeleHistorie ""@en ;
+    ns1:IndicatieMaterileHistorie ""@en ;
+    ns1:Lengte ""@en ;
+    ns1:MogelijkGeenWaarde "Nee"@en ;
+    ns1:Patroon "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    skos:prefLabel "Definitie"@en .
+
+:formeleStatus a rdf:Property ;
+    ns1:Authentiek ""@en ;
+    ns1:Begrip ""@en ;
+    ns1:DatumOpname ""@en ;
+    ns1:FormeelPatroon ""@en ;
+    ns1:Herkomst ""@en ;
+    ns1:HerkomstDefinitie ""@en ;
+    ns1:IndicatieClassificerend ""@en ;
+    ns1:IndicatieFormeleHistorie ""@en ;
+    ns1:IndicatieMaterileHistorie ""@en ;
+    ns1:Lengte ""@en ;
+    ns1:MogelijkGeenWaarde "Nee"@en ;
+    ns1:Patroon "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    skos:definition "--definitie-- Aanduiding van de mate van verplichtheid van de standaard binnen het toepassingsgebied. (Standaard)"@en ;
+    skos:prefLabel "Formele status"@en .
+
+:thema a owl:ObjectProperty ;
+    skos:definition "--definitie-- Thema van de dataset (thema)"@en ;
+    skos:prefLabel "Thema"@en .
+
+:titel a rdf:Property ;
+    ns1:Authentiek ""@en ;
+    ns1:Begrip ""@en ;
+    ns1:DatumOpname ""@en ;
+    ns1:FormeelPatroon ""@en ;
+    ns1:Herkomst ""@en ;
+    ns1:HerkomstDefinitie ""@en ;
+    ns1:IndicatieClassificerend ""@en ;
+    ns1:IndicatieFormeleHistorie ""@en ;
+    ns1:IndicatieMaterileHistorie ""@en ;
+    ns1:Lengte ""@en ;
+    ns1:MogelijkGeenWaarde "Nee"@en ;
+    ns1:Patroon "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    skos:prefLabel "Titel"@en .
+
+:uitleg a rdf:Property ;
+    ns1:Authentiek ""@en ;
+    ns1:Begrip ""@en ;
+    ns1:DatumOpname "25-01-2024"@en ;
+    ns1:FormeelPatroon ""@en ;
+    ns1:Herkomst ""@en ;
+    ns1:HerkomstDefinitie ""@en ;
+    ns1:IndicatieClassificerend ""@en ;
+    ns1:IndicatieFormeleHistorie ""@en ;
+    ns1:IndicatieMaterileHistorie ""@en ;
+    ns1:Lengte ""@en ;
+    ns1:MogelijkGeenWaarde "Nee"@en ;
+    ns1:Patroon "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:URI "http://www.w3.org/2000/01/rdf-schema#comment"@en ;
+    skos:definition "--definitie-- Een uitleg is een beschrijving van iets in eenvoudige taal, op taalniveau B1, die zonder verdere context begrepen kan worden. (Begrip)"@en ;
+    skos:prefLabel "Uitleg"@en .
+
+:voorkeursterm a rdf:Property ;
+    ns1:Authentiek ""@en ;
+    ns1:Begrip ""@en ;
+    ns1:DatumOpname "25-01-2024"@en ;
+    ns1:FormeelPatroon ""@en ;
+    ns1:Herkomst ""@en ;
+    ns1:HerkomstDefinitie ""@en ;
+    ns1:IndicatieClassificerend ""@en ;
+    ns1:IndicatieFormeleHistorie ""@en ;
+    ns1:IndicatieMaterileHistorie ""@en ;
+    ns1:Lengte ""@en ;
+    ns1:Mogelijkgeenwaarde "Nee"@en ;
+    ns1:Patroon "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:URI "http://www.w3.org/2004/02/skos/core#prefLabel"@en ;
+    ns1:uniqueLang "true"@en ;
+    skos:definition "--definitie-- Een voorkeursterm is een naam die in een specifieke taal de geprefereerde lexicale naam is. --toelichting-- De term om een begrip weer te geven, kan bestaan uit &#233;&#233;n of meerdere woorden. In het gewone spraakgebruik kan een enkele term meer dan &#233;&#233;n betekenis hebben. De meest voorkomende betekenis is niet altijd de betekenis die nodig is om het in het begrippenkader gezochte begrip weer te geven. Indien de context die wordt geboden door de hi&#235;rarchie van bovenliggende en onderliggende begrippen gekoppeld aan het betreffende begrip onvoldoende is om de beoogde reikwijdte te verduidelijken, dienen aanvullende maatregelen te worden genomen. Hoewel alle termen in een begrippenkader zo ondubbelzinnig mogelijk moeten worden uitgedrukt, is het vooral belangrijk om de voorkeursterm van een bepaald concept zo te formuleren dat het de beoogde reikwijdte aan elke gebruiker overbrengt. De term \"depressie\" met meerdere betekenissen kan bijvoorbeeld worden geherformuleerd als \"economische depressie\" of \"meteorologische depressie\", al naar gelang het geval. Als alternatief kan een kwalificatie worden gebruikt. In gevallen waarin deze maatregelen niet passend of voldoende zijn, of waar aanvullende informatie zou helpen om de betekenis te verduidelijken en het gebruik consistenter te maken, moet een expliciete toelichting worden gebruikt. (Begrip)"@en ;
+    skos:prefLabel "Voorkeursterm"@en .
+
+:Dataset a owl:Class ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """<date>#NOTES#Default: <date>
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:IndicatieAbstractObject """#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+"""@en ;
+    ns1:Kwaliteit """#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+"""@en ;
+    ns1:Populatie "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:UniekeAanduiding """#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+"""@en ;
+    rdfs:subClassOf :Resource ;
+    skos:definition "--definitie-- Een dataset is een zinvolle verzameling van samenhangende gegevens, die beheerd of gepubliceerd wordt door &#233;&#233;n organisatie, en in &#233;&#233;n of meer formaten beschikbaar of downloadbaar is."@en ;
+    skos:prefLabel "Dataset"@en .
+
+:Resource a owl:Class ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """<date>#NOTES#Default: <date>
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:IndicatieAbstractObject """#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+"""@en ;
+    ns1:Kwaliteit """#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+"""@en ;
+    ns1:Populatie "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:UniekeAanduiding """#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+"""@en ;
+    skos:definition "--definitie-- Iets wat beschreven kan worden."@en ;
+    skos:prefLabel "Resource"@en .
+
+:Standaard a owl:Class ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """<date>#NOTES#Default: <date>
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:IndicatieAbstractObject """#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+"""@en ;
+    ns1:Kwaliteit """#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+"""@en ;
+    ns1:Populatie "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:UniekeAanduiding """#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+"""@en ;
+    rdfs:subClassOf :Specificatie ;
+    skos:definition "--definitie-- A reference point against which other things can be evaluated or compared."@en ;
+    skos:prefLabel "Standaard"@en .
+
+:Specificatie a owl:Class ;
+    ns1:Begrip """#NOTES#Description: Verwijzing naar een begrip, vanuit een modelelement, waarmee wordt aangegeven op welk begrip, of begrippen, het informatiemodel element is gebaseerd. De verwijzing heeft de vorm van een term of een URI.
+"""@en ;
+    ns1:DatumOpname """<date>#NOTES#Default: <date>
+Description: De datum waarop het modelelement is opgenomen in het informatiemodel.
+"""@en ;
+    ns1:Herkomst """#NOTES#Description: De registratie of het informatiemodel waaraan het modelelement ontleend is dan wel de eigen organisatie indien het door de eigen organisatie toegevoegd is.
+"""@en ;
+    ns1:HerkomstDefinitie """#NOTES#Description: De registratie of het informatiemodel waaruit de definitie is overgenomen dan wel een aanduiding die aangeeft uit welke bronnen de definitie is samengesteld.
+"""@en ;
+    ns1:IndicatieAbstractObject """#NOTES#Description: Een indicatie die aangeeft of er objecten kunnen bestaan die getypeerd worden als zijnde objecten (instanties) van alleen dit objecttype. Een abstract objecttype moet altijd de generalisatie zijn van ï¿½ï¿½n of meerdere objecttypes die niet abstract zijn.
+"""@en ;
+    ns1:Kwaliteit """#NOTES#Description: Beschrijving van de mate waarin in de registratie opgenomen objecten van het desbetreffende type volledig, juist, actueel, nauwkeurig en betrouwbaar zijn.
+"""@en ;
+    ns1:Populatie "<memo>"@en ;
+    ns1:Toelichting "<memo>"@en ;
+    ns1:UniekeAanduiding """#NOTES#Description: De identificerende kenmerken van een object die een instantie van het objecttype uniek identificeren.
+"""@en ;
+    rdfs:subClassOf :Dataset ;
+    skos:prefLabel "Specificatie"@en .
+

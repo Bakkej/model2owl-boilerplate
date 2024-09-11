@@ -8,8 +8,10 @@ on:
       - "implementation/IMRDD/xmi_conceptual_model/IMRDD_CM.xml"
       - "implementation/demo_ontology/xmi_conceptual_model/demo_ontology_CM.xml"
       - "implementation/demo_ontology_module/xmi_conceptual_model/demo_ontology_module_CM.xml"
+      - "implementation/imbaglv/xmi_conceptual_model/imbaglv_CM.xml"
 jobs:
   report_and_glossary:
+    if: false
     runs-on: ubuntu-latest
     env:
       OUTPUT_GLOSSARY_PATH: glossary/
@@ -26,10 +28,13 @@ jobs:
       - name: get-saxon
         run: pwd && cd model2owl && make get-saxon
 
+      - name: fix-mim
+        run: chmod +x ./github/workflows/formatNameTag.sh && ./github/workflows/formatNameTag.sh //xml_conceptual_model/*
+
 
       - name: generate convention report and glossary
         run: |
-          AVAILABLE_IMPLEMENTATIONS=(demo_ontology demo_ontology_module IMRDD)
+          AVAILABLE_IMPLEMENTATIONS=(demo_ontology demo_ontology_module IMRDD imbaglv)
           for implementation in "${AVAILABLE_IMPLEMENTATIONS[@]}"
           do
             echo "-------------------${implementation}---------------------------------"
@@ -62,7 +67,7 @@ jobs:
 
       - name: merge implementations xmi files into one
         run: |
-          AVAILABLE_IMPLEMENTATIONS=(demo_ontology demo_ontology_module IMRDD)
+          AVAILABLE_IMPLEMENTATIONS=(demo_ontology demo_ontology_module IMRDD imbaglv)
           cd model2owl
           mkdir -p merge-xmis
           for implementation in "${AVAILABLE_IMPLEMENTATIONS[@]}"
@@ -128,13 +133,13 @@ jobs:
 
       - name: get-rdflib
         run: cd model2owl && make create-virtual-env && make get-rdflib
-
-      - name: fix-mim (1/)
+      
+        - name: fix-mim
         run: chmod +x ./github/workflows/formatNameTag.sh && ./github/workflows/formatNameTag.sh //xml_conceptual_model/*
 
       - name: transform step
         run: |
-          AVAILABLE_IMPLEMENTATIONS=(demo_ontology demo_ontology_module IMRDD)
+          AVAILABLE_IMPLEMENTATIONS=(demo_ontology demo_ontology_module IMRDD imbaglv)
           for implementation in "${AVAILABLE_IMPLEMENTATIONS[@]}"
           do
             echo "-------------------${implementation} transform---------------------------------"

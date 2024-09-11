@@ -129,6 +129,9 @@ jobs:
       - name: get-rdflib
         run: cd model2owl && make create-virtual-env && make get-rdflib
 
+      - name: fix-mim (1/)
+        run: chmod +x ./github/workflows/formatNameTag.sh && ./github/workflows/formatNameTag.sh //xml_conceptual_model/*
+
       - name: transform step
         run: |
           AVAILABLE_IMPLEMENTATIONS=(demo_ontology demo_ontology_module IMRDD)

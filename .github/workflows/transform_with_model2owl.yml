@@ -29,7 +29,7 @@ jobs:
         run: pwd && cd model2owl && make get-saxon
 
       - name: fix-mim
-        run: chmod +x ./github/workflows/formatNameTag.sh && ./github/workflows/formatNameTag.sh //xml_conceptual_model/*
+        run: chmod +x ./implementation/formatNameTag.sh && ./implementation/formatNameTag.sh //xml_conceptual_model/*
 
 
       - name: generate convention report and glossary
